@@ -1,15 +1,18 @@
 #include <stdio.h>
 
+#define ENV "development"
+
+
 int main()
 {
-    printf("Hi! I am a Kambria codebase worker!\n");
+    printf("Environment: %s\n", ENV);
 
     FILE *file;
     FILE *copied_file;
     char c;
 
     file = fopen("/usr/share/kbcb/pre-push", "r");
-    copied_file = fopen("./tmp/new-pre-push", "w");
+    copied_file = fopen("./.git/hooks/pre-push", "w");
 
     if (file == NULL)
     {
