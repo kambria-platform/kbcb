@@ -1,0 +1,13 @@
+prefix="/home/tups/Desktop/kbcb/src"
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libgit2
+Description: The git library, take 2
+Version: 0.27.9
+
+Libs: -L${libdir} -lgit2
+Libs.private: -lrt -lpthread
+Requires.private: openssl
+
+Cflags: -I${includedir}

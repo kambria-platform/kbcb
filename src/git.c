@@ -48,6 +48,6 @@ int addHook()
 
 int addKambriaRemote(char *repo)
 {
-    
+
     return 0;
 }
