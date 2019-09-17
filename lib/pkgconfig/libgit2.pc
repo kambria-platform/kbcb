@@ -1,4 +1,4 @@
-prefix="/home/tups/Desktop/kbcb/src"
+prefix="/home/tups/Desktop/kbcb"
 libdir=${prefix}/lib
 includedir=${prefix}/include
 

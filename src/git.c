@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <git2.h>
 #include "git.h"
 
 #ifdef ROOT
@@ -48,6 +49,8 @@ int addHook()
 
 int addKambriaRemote(char *repo)
 {
-
+    git_libgit2_init();
+    printf("Git: %s\n", repo);
+    git_libgit2_shutdown();
     return 0;
 }
