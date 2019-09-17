@@ -1,6 +1,5 @@
 rm -rf ./builds
 mkdir ./builds
 cd ./builds
-cmake ..
+cmake .. -D ENV="DEVELOPMENT"
 make
-./kbcb
