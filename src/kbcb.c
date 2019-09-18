@@ -3,23 +3,25 @@
 #include "util.h"
 #include "kambria.h"
 
+#define MAX_LENGTH 255
+
 int main(const int argc, const char *argv[])
 {
-    const char *ERROR = "Invalid parameters.";
-    const char *HELP = "Show help.";
-
     if (argc >= 2)
     {
+        // Handle init option
         if (strcmp(argv[1], "init") == 0)
         {
-            char repo[100] = "empty";
-            char key[100] = "empty";
+            char repo[MAX_LENGTH] = "empty";
+            char key[MAX_LENGTH] = "empty";
 
-            /**
-             * Get params by options
-             */
+            // Get params by options
             for (int i = 2; i < argc; i++)
             {
+                if (strcmp(argv[i], "-h") == 0 || strcmp(argv[i], "--help") == 0)
+                {
+                    showHelp();
+                }
                 if (strcmp(argv[i], "-r") == 0 || strcmp(argv[i], "--repo") == 0)
                 {
                     strcpy(repo, argv[i + 1]);
@@ -30,30 +32,28 @@ int main(const int argc, const char *argv[])
                 }
             }
 
-            /**
-             * Get params manually
-             */
+            // Get params manually
             if (strcmp(repo, "empty") == 0)
             {
                 printf("Repository URL: ");
-                gets(repo);
+                fgets(repo, MAX_LENGTH, stdin);
+                repo[strcspn(repo, "\n")] = '\0'; // Remove newline
             }
             if (strcmp(key, "empty") == 0)
             {
                 printf("Authentication key: ");
-                gets(key);
+                fgets(key, MAX_LENGTH, stdin);
+                key[strcspn(key, "\n")] = '\0'; // Remove newline
             }
 
-            /**
-             * Execute params
-             */
+            // Execute params
             // Repo related
             if (strcmp(repo, "empty") == 0 || strlen(repo) == 0)
             {
-                char *error = "\tYou cannot setup Kambria Codebase without your repository url.\n"
-                              "\tPlease create your repo on Kambria Codebase first.\n"
-                              "\tFor more detail, access app.kambria.io";
-                handleCommonError(error);
+                char *error_repo = "\tYou cannot setup Kambria Codebase without your repository url.\n"
+                                   "\tPlease create your repo on Kambria Codebase first.\n"
+                                   "\tFor more detail, access app.kambria.io";
+                handleCommonError(error_repo);
             }
             else
             {
@@ -73,18 +73,21 @@ int main(const int argc, const char *argv[])
                 createRC(key);
             }
         }
+        // Handle fix option
         else if (strcmp(argv[1], "fix") == 0)
         {
-            printf("Fix\n");
+            handleCommonError("The fix function is not implemented yet!");
         }
+        // Handle undefined option
         else
         {
-            handleCommonError(ERROR);
+            char *invalid_params = "Invalid parameters.";
+            handleCommonError(invalid_params);
         }
     }
     else
     {
-        printf(HELP);
+        showHelp();
     }
 
     return 0;

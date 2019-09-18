@@ -55,3 +55,18 @@ char *getHookPath(const char *filename)
     strcat(re, filename);
     return re;
 }
+
+void showHelp()
+{
+    char *help = "Usage:\n"
+                 "\tkbcb command --option <argument>\n"
+                 "\nCommands:\n"
+                 "\tinit: \tInitiate your project on Kambria Codebse.\n"
+                 "\tfix: \t(This function is rarely used) In case of merging conflict on Kambria Codebase and you cannot fix it by manually merging. Fix command will force to resync your repository.\n"
+                 "\nOptions:\n"
+                 "\t-r --repo: \t Add your repository url to remote.\n"
+                 "\t-k --key: \t Add authentication key to .kambriarc.\n"
+                 "\t-h --help: \t Show help information.";
+    handleCommonInfo(help);
+    exit(0);
+}

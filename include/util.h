@@ -25,3 +25,8 @@ void handleGitError(int error);
  * @param - filename
  */
 char *getHookPath(char *filename);
+
+/**
+ * Show help info and exit program
+ */
+void showHelp();
