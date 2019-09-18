@@ -1,5 +1,5 @@
-rm -rf ./builds
-mkdir ./builds
-cd ./builds
+rm -rf ./build
+mkdir ./build
+cd ./build
 cmake .. -D ENV="PRODUCTION"
 make

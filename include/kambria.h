@@ -11,6 +11,11 @@ void addHook();
 void addKambriaRemote(char *repo_url);
 
 /**
+ * Delete kambria remote
+ */
+void deleteKambriaRemote();
+
+/**
  * Create empty .kambriarc
  */
 void createEmptyRC();

@@ -18,10 +18,6 @@ int main(const int argc, const char *argv[])
             // Get params by options
             for (int i = 2; i < argc; i++)
             {
-                if (strcmp(argv[i], "-h") == 0 || strcmp(argv[i], "--help") == 0)
-                {
-                    showHelp();
-                }
                 if (strcmp(argv[i], "-r") == 0 || strcmp(argv[i], "--repo") == 0)
                 {
                     strcpy(repo, argv[i + 1]);
@@ -29,6 +25,10 @@ int main(const int argc, const char *argv[])
                 if (strcmp(argv[i], "-k") == 0 || strcmp(argv[i], "--key") == 0)
                 {
                     strcpy(key, argv[i + 1]);
+                }
+                if (strcmp(argv[i], "--force") == 0)
+                {
+                    deleteKambriaRemote();
                 }
             }
 
@@ -77,6 +77,11 @@ int main(const int argc, const char *argv[])
         else if (strcmp(argv[1], "fix") == 0)
         {
             handleCommonError("The fix function is not implemented yet!");
+        }
+        // Hanlde help
+        else if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
+        {
+            showHelp();
         }
         // Handle undefined option
         else

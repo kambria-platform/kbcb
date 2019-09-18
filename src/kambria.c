@@ -61,6 +61,20 @@ void addKambriaRemote(char *repo_url)
     git_libgit2_shutdown();
 }
 
+void deleteKambriaRemote()
+{
+    git_libgit2_init();
+
+    git_repository *repo = NULL;
+    int error_repo = git_repository_open(&repo, "./");
+    handleGitError(error_repo);
+    int error_remote = git_remote_delete(repo, "kambria");
+    handleGitError(error_remote);
+
+    git_repository_free(repo);
+    git_libgit2_shutdown();
+}
+
 void createEmptyRC()
 {
     FILE *kambriarc;
