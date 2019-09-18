@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+#include "util.h"
 #include "kambria.h"
 
 int main(const int argc, const char *argv[])
 {
-    const char *ERROR = "Invalid parameters.\n";
-    const char *HELP = "Show help.\n";
+    const char *ERROR = "Invalid parameters.";
+    const char *HELP = "Show help.";
 
     if (argc >= 2)
     {
@@ -49,13 +50,10 @@ int main(const int argc, const char *argv[])
             // Repo related
             if (strcmp(repo, "empty") == 0 || strlen(repo) == 0)
             {
-                printf("\n");
-                printf("Error!\n");
-                printf("You cannot setup Kambria Codebase without your repository url.\n");
-                printf("Please create you repo and Kambria Codebase first.\n");
-                printf("For more detail, access app.kambria.io\n");
-                printf("\n");
-                return 1;
+                char *error = "\tYou cannot setup Kambria Codebase without your repository url.\n"
+                              "\tPlease create your repo on Kambria Codebase first.\n"
+                              "\tFor more detail, access app.kambria.io";
+                handleCommonError(error);
             }
             else
             {
@@ -65,10 +63,9 @@ int main(const int argc, const char *argv[])
             // Key related
             if (strcmp(key, "empty") == 0 || strlen(key) == 0)
             {
-                printf("\n");
-                printf("You have skipped to input your key!\n");
-                printf("We will create a empty .kambriarc then you can edit it later.\n");
-                printf("\n");
+                char *info = "You have skipped to input your key!\n"
+                             "We will create a empty .kambriarc then you can edit it later.\n";
+                handleCommonInfo(info);
                 createEmptyRC();
             }
             else
@@ -82,7 +79,7 @@ int main(const int argc, const char *argv[])
         }
         else
         {
-            printf(ERROR);
+            handleCommonError(ERROR);
         }
     }
     else

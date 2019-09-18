@@ -3,7 +3,13 @@
  * Show error and exit program
  * @param - message
  */
-void handleCommonError(char *messgae);
+void handleCommonError(const char *messgae);
+
+/**
+ * Handle info
+ * @param - message
+ */
+void handleCommonInfo(const char *message);
 
 /**
  * Handle error

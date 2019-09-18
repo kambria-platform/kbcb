@@ -8,9 +8,15 @@
 #define ENV "production"
 #endif
 
-void handleCommonError(char *message){
+void handleCommonError(const char *message)
+{
     printf("Error: %s\n", message);
     exit(0);
+}
+
+void handleCommonInfo(const char *message)
+{
+    printf("%s\n", message);
 }
 
 void handleGitError(int error)

@@ -28,12 +28,12 @@ void addHook()
     input = fopen(SHARED_PATH, "r");
     if (input == NULL)
     {
-        handleCommonError("kbcb package met a critical damage, please reinstall the package and retry!\n");
+        char *error = "kbcb package met a critical damage, please reinstall the package and retry!";
+        handleCommonError(error);
     }
 
     FILE *output;
     char *hook_path = getHookPath("pre-push");
-    printf("Test: %s\n", hook_path);
     output = fopen(hook_path, "w");
     char c;
     while ((c = fgetc(input)) != EOF)
@@ -43,33 +43,35 @@ void addHook()
 
     free(hook_path);
     fclose(input);
-    return 0;
 }
 
-int addKambriaRemote(char *repo)
+void addKambriaRemote(char *repo_url)
 {
     git_libgit2_init();
-    git_buf root = {0};
-    int error = git_repository_discover(&root, "./", 0, NULL);
-    printf("Git: %s\n", root.ptr);
-    git_buf_free(&root);
+
+    git_repository *repo = NULL;
+    int error_repo = git_repository_open(&repo, "./");
+    handleGitError(error_repo);
+    git_remote *remote;
+    int error_remote = git_remote_create(&remote, repo, "kambria", repo_url);
+    handleGitError(error_remote);
+
+    git_repository_free(repo);
+    git_remote_free(remote);
     git_libgit2_shutdown();
-    return 0;
 }
 
-int createEmptyRC()
+void createEmptyRC()
 {
     FILE *kambriarc;
     kambriarc = fopen(KAMBRIARC_PATH, "w");
     fclose(kambriarc);
-    return 0;
 }
 
-int createRC(char *key)
+void createRC(char *key)
 {
     FILE *kambriarc;
     kambriarc = fopen(KAMBRIARC_PATH, "w");
     fputs(key, kambriarc);
     fclose(kambriarc);
-    return 0;
 }

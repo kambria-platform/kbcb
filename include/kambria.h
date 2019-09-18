@@ -4,6 +4,18 @@
  */
 void addHook();
 
-int addKambriaRemote(char *repo);
-int createEmptyRC();
-int createRC(char *key);
+/**
+ * Add kambria remote url
+ * @param - repo url
+ */
+void addKambriaRemote(char *repo_url);
+
+/**
+ * Create empty .kambriarc
+ */
+void createEmptyRC();
+
+/**
+ * Create .kambriarc with key
+ */
+void createRC(char *key);
