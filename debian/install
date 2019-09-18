@@ -1,0 +1,2 @@
+build/kbcb usr/bin
+src/hooks/pre-push usr/share/pre-push
