@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "git.h"
-#include "kambriarc.h"
+#include "kambria.h"
 
 int main(const int argc, const char *argv[])
 {

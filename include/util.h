@@ -1,0 +1,1 @@
+char *getHookPath(char *filename);
