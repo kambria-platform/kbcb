@@ -19,7 +19,7 @@
 
 #define KAMBRIARC_PATH "./.kambriarc"
 
-int addHook()
+void addHook()
 {
     /**
      * Copy pre-hooks to user's git
@@ -28,8 +28,7 @@ int addHook()
     input = fopen(SHARED_PATH, "r");
     if (input == NULL)
     {
-        printf("kbcb package met a critical damage, please reinstall the package and retry!\n");
-        return 1;
+        handleCommonError("kbcb package met a critical damage, please reinstall the package and retry!\n");
     }
 
     FILE *output;
