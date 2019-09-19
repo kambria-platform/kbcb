@@ -52,6 +52,12 @@ To run (stay at the source root),
 sh start.sh
 ```
 
+Then, you can test by,
+
+```
+./build/kbcb
+```
+
 ## build.sh
 
 This file let you build the package in `production` environment. Packging folder would appear in `packages` folder.

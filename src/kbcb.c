@@ -70,7 +70,7 @@ int main(const int argc, const char *argv[])
             }
             else
             {
-                // createRC(key);
+                createRC(key);
             }
         }
         // Handle fix option
