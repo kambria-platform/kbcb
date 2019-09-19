@@ -3,6 +3,7 @@
 
 CMakeFiles/kbcb.dir/src/git.c.o
  ../include/git.h
+ ../include/util.h
  /home/tups/Desktop/kbcb/packages/kbcb-0.0.1/kbcb-0.0.1/src/git.c
 CMakeFiles/kbcb.dir/src/kambria.c.o
  ../include/git.h

@@ -21,6 +21,8 @@ string.h
 -
 git.h
 /home/tups/Desktop/kbcb/packages/kbcb-0.0.1/kbcb-0.0.1/src/git.h
+util.h
+/home/tups/Desktop/kbcb/packages/kbcb-0.0.1/kbcb-0.0.1/src/util.h
 
 /home/tups/Desktop/kbcb/packages/kbcb-0.0.1/kbcb-0.0.1/src/kambria.c
 stdio.h

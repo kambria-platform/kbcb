@@ -15,21 +15,22 @@ Changes:
  .
    * Fix shared data directory
    * Check empty .git directory
+   * Add explicit errors
 Checksums-Sha1:
- e692b78aa40d3c69fd78a08f17f405f04f8c9acd 769 kbcb_0.0.1-2.dsc
- fd7f49ca010d5148148f35a3bb1592232348fae4 2420 kbcb_0.0.1-2.debian.tar.xz
- 74f3208d80cb4e63e9061087e712d7e0b8e87edf 2584 kbcb-dbgsym_0.0.1-2_amd64.deb
- e5023bc5b2e4195e793b7dd6e527ee34444fbae2 5631 kbcb_0.0.1-2_amd64.buildinfo
- 7c1fde93d230c9f76e7a9ac51daca6f2d0033624 6928 kbcb_0.0.1-2_amd64.deb
+ a2ae4efdb0a68897bb9defe8295cf462a4efec9b 769 kbcb_0.0.1-2.dsc
+ 75cb67473622209740d6c886820259a65accf3ef 2432 kbcb_0.0.1-2.debian.tar.xz
+ 219b78ccb18a2296677f2dbda91e440f949ba357 2588 kbcb-dbgsym_0.0.1-2_amd64.deb
+ 852884340060110189f04318cbb73f01f3a7b01b 5631 kbcb_0.0.1-2_amd64.buildinfo
+ 2df3b985560ba685eb381bdb04497c3d0c33c713 6980 kbcb_0.0.1-2_amd64.deb
 Checksums-Sha256:
- bc0e4e1e06725dfa1d88a0b8809ee9b1eb2b63ff99b979e09b4dd7043b0b1637 769 kbcb_0.0.1-2.dsc
- c5c61cc164bf578dd7e3112cb8dce9153ec63f6836ab39d076834ff3f99fa6e4 2420 kbcb_0.0.1-2.debian.tar.xz
- a91e9ce6bc9dd3c0b64f36a58490df126c3c51c25450f2e02c88389fc52a7d19 2584 kbcb-dbgsym_0.0.1-2_amd64.deb
- 8c0c72a6ad7d55c76d9ba2287fb6f5e1907bfe5c810b299bf260471e7a8cd957 5631 kbcb_0.0.1-2_amd64.buildinfo
- 91f3bc4d85c9323e81e1c0bdadf7c766103f8d6783767b98ca6206d09a680580 6928 kbcb_0.0.1-2_amd64.deb
+ b829e0b4289b98e2882bec85c01984f4b69178a9588a531ff97ca7b74e4192c8 769 kbcb_0.0.1-2.dsc
+ b55d1b533b96f59aedfaa1b120f69ac67a5d9a2815b3147bbcef91439c12c67b 2432 kbcb_0.0.1-2.debian.tar.xz
+ 4400a68f58944659f40af3886737a4b0fda07b48e58fd61700e68983e045e6d1 2588 kbcb-dbgsym_0.0.1-2_amd64.deb
+ 1e2279e324e2a72d455560ec76f7e3bfbeb612d3a5c9f86511d58413c4882675 5631 kbcb_0.0.1-2_amd64.buildinfo
+ 3bd456a0bb8aaf3a9d8335ebd699a2bb6c4f902e0658e14dcfaaf9bd5ce17fd7 6980 kbcb_0.0.1-2_amd64.deb
 Files:
- afb25c12cef3d4b1f46f04f11f1df423 769 devel optional kbcb_0.0.1-2.dsc
- bd65f428c6691d376f8081eddf744484 2420 devel optional kbcb_0.0.1-2.debian.tar.xz
- b5546dde647e52153e1b53212f6d7c6e 2584 debug optional kbcb-dbgsym_0.0.1-2_amd64.deb
- 7500ac05f4830c04a10162887dc1865a 5631 devel optional kbcb_0.0.1-2_amd64.buildinfo
- 576d95548543535e278dbf0fa1e99faa 6928 devel optional kbcb_0.0.1-2_amd64.deb
+ 78369c33caa3fa87c6d4d9d8686dd052 769 devel optional kbcb_0.0.1-2.dsc
+ 7b1103c7c87e4e3eb8d0d90cfacbf384 2432 devel optional kbcb_0.0.1-2.debian.tar.xz
+ 42f3f0e0d4814c3e513850d1cb08309a 2588 debug optional kbcb-dbgsym_0.0.1-2_amd64.deb
+ 75c3310221eb56c0dd6443cd940cf785 5631 devel optional kbcb_0.0.1-2_amd64.buildinfo
+ 96a50aa922cff61db6f1ed3b5c9f33f3 6980 devel optional kbcb_0.0.1-2_amd64.deb
