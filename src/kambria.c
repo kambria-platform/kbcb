@@ -49,7 +49,7 @@ void addKambriaRemote(char *repo_url)
     addRemote("kambria", repo_url);
 }
 
-void deleteKambriaRemote()
+void removeKambriaRemote()
 {
     removeRemote("kambria");
 }

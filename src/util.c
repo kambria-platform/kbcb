@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <util.h>
+#include "util.h"
+#include "git.h"
 
 #ifdef DEVELOPMENT
 #define ENV "development"
@@ -11,16 +12,23 @@
 
 char *getRootPath(char *filename)
 {
-    char *hook_path;
+    char *git_path = getGitPath();
     if (ENV == "development")
-        hook_path = "./dist/";
+    {
+        char dist[] = "/dist/";
+        git_path = realloc(git_path, strlen(git_path) + strlen(dist));
+        strcat(git_path, dist);
+    }
     else
-        hook_path = "./.git/hooks/";
+    {
+        char root[] = "/";
+        git_path = realloc(git_path, strlen(git_path) + strlen(root));
+        strcat(git_path, root);
+    }
 
-    char *re = malloc(strlen(hook_path) + strlen(filename) + 1);
-    strcpy(re, hook_path);
-    strcat(re, filename);
-    return re;
+    git_path = realloc(git_path, strlen(git_path) + strlen(filename));
+    strcat(git_path, filename);
+    return git_path;
 }
 
 void handleError(const char *message)

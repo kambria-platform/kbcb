@@ -9,18 +9,49 @@
 #define ENV "profuction"
 #endif
 
+#define BUFFER_LENGTH 8
+
+char *getGitPath()
+{
+    char *path = malloc(BUFFER_LENGTH);
+
+    FILE *fp;
+    char reader[BUFFER_LENGTH];
+    fp = popen("git rev-parse --show-toplevel", "r");
+    if (fp == NULL)
+    {
+        exit(1);
+    }
+    while (fgets(reader, BUFFER_LENGTH, fp) != NULL)
+    {
+        strcat(path, reader);
+        path = realloc(path, strlen(path) + BUFFER_LENGTH);
+    }
+
+    pclose(fp);
+    path[strcspn(path, "\n")] = '\0'; // Remove newline
+    return path;
+}
+
 char *getHookPath(char *filename)
 {
-    char *hook_path;
+    char *git_path = getGitPath();
     if (ENV == "development")
-        hook_path = "./dist/";
+    {
+        char dist[] = "/dist/";
+        git_path = realloc(git_path, strlen(git_path) + strlen(dist));
+        strcat(git_path, dist);
+    }
     else
-        hook_path = "./.git/hooks/";
+    {
+        char hooks[] = "/.git/hooks/";
+        git_path = realloc(git_path, strlen(git_path) + strlen(hooks));
+        strcat(git_path, hooks);
+    }
 
-    char *re = malloc(strlen(hook_path) + strlen(filename) + 1);
-    strcpy(re, hook_path);
-    strcat(re, filename);
-    return re;
+    git_path = realloc(git_path, strlen(git_path) + strlen(filename));
+    strcat(git_path, filename);
+    return git_path;
 }
 
 void addRemote(char *remote, char *url)
@@ -37,7 +68,9 @@ void addRemote(char *remote, char *url)
     error = system(cmd);
     free(cmd);
     if (error != 0)
+    {
         exit(1);
+    }
 }
 
 void removeRemote(char *remote)
@@ -52,5 +85,7 @@ void removeRemote(char *remote)
     error = system(cmd);
     free(cmd);
     if (error != 0)
+    {
         exit(1);
+    }
 }

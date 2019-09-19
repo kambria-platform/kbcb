@@ -13,7 +13,7 @@ void addKambriaRemote(char *repo_url);
 /**
  * Delete kambria remote
  */
-void deleteKambriaRemote();
+void removeKambriaRemote();
 
 /**
  * Create empty .kambriarc
