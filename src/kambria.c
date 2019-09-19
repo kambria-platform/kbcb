@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <git.h>
+#include <stdlib.h>
+#include "git.h"
 #include "kambria.h"
 #include "util.h"
 
@@ -17,78 +18,59 @@
 #define SHARED_PATH "/usr/share/kbcb/pre-push"
 #endif
 
-#define KAMBRIARC_PATH "./.kambriarc"
-
 void addHook()
 {
-    printf("addHook\n");
     /**
      * Copy pre-hooks to user's git
      */
-    // FILE *input;
-    // input = fopen(SHARED_PATH, "r");
-    // if (input == NULL)
-    // {
-    //     char *error = "kbcb package met a critical damage, please reinstall the package and retry!";
-    //     handleCommonError(error);
-    // }
+    FILE *input;
+    input = fopen(SHARED_PATH, "r");
+    if (input == NULL)
+    {
+        char *error = "kbcb package met a critical damage, please reinstall the package and retry!";
+        handleError(error);
+    }
 
-    // FILE *output;
-    // char *hook_path = getHookPath("pre-push");
-    // output = fopen(hook_path, "w");
-    // char c;
-    // while ((c = fgetc(input)) != EOF)
-    // {
-    //     fputc(c, output);
-    // }
+    FILE *output;
+    char *hook_path = getHookPath("pre-push");
+    output = fopen(hook_path, "w");
+    char c;
+    while ((c = fgetc(input)) != EOF)
+    {
+        fputc(c, output);
+    }
 
-    // free(hook_path);
-    // fclose(input);
+    free(hook_path);
+    fclose(input);
 }
 
 void addKambriaRemote(char *repo_url)
 {
-    printf("addKambriaRemote\n");
-    // git_libgit2_init();
-
-    // git_repository *repo = NULL;
-    // int error_repo = git_repository_open(&repo, "./");
-    // handleGitError(error_repo);
-    // git_remote *remote;
-    // int error_remote = git_remote_create(&remote, repo, "kambria", repo_url);
-    // handleGitError(error_remote);
-
-    // git_repository_free(repo);
-    // git_remote_free(remote);
-    // git_libgit2_shutdown();
+    addRemote("kambria", repo_url);
 }
 
 void deleteKambriaRemote()
 {
-    printf("deleteKambriaRemote\n");
-    // git_libgit2_init();
-
-    // git_repository *repo = NULL;
-    // int error_repo = git_repository_open(&repo, "./");
-    // handleGitError(error_repo);
-    // int error_remote = git_remote_delete(repo, "kambria");
-    // handleGitError(error_remote);
-
-    // git_repository_free(repo);
-    // git_libgit2_shutdown();
+    removeRemote("kambria");
 }
 
 void createEmptyRC()
 {
     FILE *kambriarc;
-    kambriarc = fopen(KAMBRIARC_PATH, "w");
+    char *kambriarc_path = getRootPath(".kambriarc");
+    kambriarc = fopen(kambriarc_path, "w");
+
+    free(kambriarc_path);
     fclose(kambriarc);
 }
 
 void createRC(char *key)
 {
     FILE *kambriarc;
-    kambriarc = fopen(KAMBRIARC_PATH, "w");
+    char *kambriarc_path = getRootPath(".kambriarc");
+    kambriarc = fopen(kambriarc_path, "w");
     fputs(key, kambriarc);
+
+    free(kambriarc_path);
     fclose(kambriarc);
 }

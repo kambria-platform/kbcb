@@ -1,4 +1,27 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <util.h>
+
+#ifdef DEVELOPMENT
+#define ENV "development"
+#else
+#define ENV "profuction"
+#endif
+
+char *getRootPath(char *filename)
+{
+    char *hook_path;
+    if (ENV == "development")
+        hook_path = "./dist/";
+    else
+        hook_path = "./.git/hooks/";
+
+    char *re = malloc(strlen(hook_path) + strlen(filename) + 1);
+    strcpy(re, hook_path);
+    strcat(re, filename);
+    return re;
+}
 
 void handleError(const char *message)
 {
