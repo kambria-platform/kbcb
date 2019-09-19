@@ -9,27 +9,28 @@ package=kbcb-$version
 
 # Create package dir
 cd ./packages
-mkdir ./$package
-mkdir ./$package/$package
+rm -rf $package
+mkdir -p ./$package/$package
 
 # Copy source to new package dir
 cd ..
 cp README.md ./debian/README.Debian
 cp -r debian include lib src CMakeLists.txt ./packages/$package/$package
 
-# Build source
+# Build source (For testing purpose)
+# When build package,
+# debbuild uses dh_auto_configure which defined in debian/rules
 cd ./packages/$package/$package
-rm -rf ./build
 mkdir ./build
 cd ./build
-cmake .. -D ENV="PRODUCTION"
+cmake .. -DENV="PRODUCTION"
 make
 
 # Build package
 cd ../..
 tar -cvzf $package.tar.gz $package
 cd ./$package
-dh_make -f ../$package.tar.gz
+dh_make --file ../$package.tar.gz --copyright gpl2 --indep --yes
 debuild -us -uc
 
 # LightGreen='\033[1;32m'
