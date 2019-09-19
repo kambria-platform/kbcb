@@ -22,6 +22,7 @@ char *getGitPath()
     {
         exit(1);
     }
+
     while (fgets(reader, BUFFER_LENGTH, fp) != NULL)
     {
         strcat(path, reader);
@@ -29,6 +30,12 @@ char *getGitPath()
     }
 
     pclose(fp);
+
+    if (strlen(path) == 0)
+    {
+        exit(1);
+    }
+
     path[strcspn(path, "\n")] = '\0'; // Remove newline
     return path;
 }

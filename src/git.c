@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "git.h"
+#include "util.h"
 
 #ifdef DEVELOPMENT
 #define ENV "development"
@@ -20,7 +21,8 @@ char *getGitPath()
     fp = popen("git rev-parse --show-toplevel", "r");
     if (fp == NULL)
     {
-        exit(1);
+        char *error_fp = "Cannot recognize your repository, please make sure you are in a valid repository!";
+        handleError(error_fp);
     }
 
     while (fgets(reader, BUFFER_LENGTH, fp) != NULL)
@@ -33,7 +35,8 @@ char *getGitPath()
 
     if (strlen(path) == 0)
     {
-        exit(1);
+        char *error_path = "Cannot recognize your repository, please make sure you are in a valid repository!";
+        handleError(error_path);
     }
 
     path[strcspn(path, "\n")] = '\0'; // Remove newline

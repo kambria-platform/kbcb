@@ -33,6 +33,7 @@ void addHook()
 
     FILE *output;
     char *hook_path = getHookPath("pre-push");
+    printf("%s\n", hook_path);
     output = fopen(hook_path, "w");
     char c;
     while ((c = fgetc(input)) != EOF)

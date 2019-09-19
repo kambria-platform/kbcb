@@ -2,6 +2,7 @@ kbcb (0.0.1-2) unstable; urgency=medium
 
   * Fix shared data directory
   * Check empty .git directory
+  * Add explicit errors
 
  -- Tu Phan <tphanson@kambria.io>  Tue, 19 Sep 2019 2:20:03 -0700
 
