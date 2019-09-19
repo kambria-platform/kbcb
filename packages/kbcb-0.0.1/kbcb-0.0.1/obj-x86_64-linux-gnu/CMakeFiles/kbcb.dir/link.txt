@@ -1,0 +1,1 @@
+/usr/bin/cc  -DPRODUCTION -DROOT=/home/tups/Desktop/kbcb/packages/kbcb-0.0.1/kbcb-0.0.1  -Wl,-z,relro -rdynamic CMakeFiles/kbcb.dir/src/git.c.o CMakeFiles/kbcb.dir/src/kambria.c.o CMakeFiles/kbcb.dir/src/kbcb.c.o CMakeFiles/kbcb.dir/src/util.c.o  -o kbcb 

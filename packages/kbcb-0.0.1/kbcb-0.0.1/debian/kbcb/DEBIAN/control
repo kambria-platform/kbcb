@@ -1,0 +1,12 @@
+Package: kbcb
+Version: 0.0.1-2
+Architecture: amd64
+Maintainer: Tu Phan <tphanson@kambria.io>
+Installed-Size: 29
+Depends: libc6 (>= 2.2.5), git
+Section: devel
+Priority: optional
+Homepage: app.kambria.io
+Description: Kambria Codebase package <kbcb>
+ kbcb is Kambria Codebase Client that help developer to
+ quick connect their repository to Kambria Codebase.

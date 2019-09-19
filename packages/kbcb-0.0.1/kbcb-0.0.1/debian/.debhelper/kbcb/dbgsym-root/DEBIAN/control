@@ -1,0 +1,12 @@
+Package: kbcb-dbgsym
+Source: kbcb
+Version: 0.0.1-2
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Tu Phan <tphanson@kambria.io>
+Installed-Size: 17
+Depends: kbcb (= 0.0.1-2)
+Section: debug
+Priority: optional
+Description: debug symbols for kbcb
+Build-Ids: 910984cffa6676d9f7d465a0f58aeb9dd8f8b190
