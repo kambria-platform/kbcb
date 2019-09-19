@@ -53,7 +53,7 @@ int main(const int argc, const char *argv[])
                 char *error_repo = "\tYou cannot setup Kambria Codebase without your repository url.\n"
                                    "\tPlease create your repo on Kambria Codebase first.\n"
                                    "\tFor more detail, access app.kambria.io";
-                handleCommonError(error_repo);
+                handleError(error_repo);
             }
             else
             {
@@ -65,7 +65,7 @@ int main(const int argc, const char *argv[])
             {
                 char *info = "You have skipped to input your key!\n"
                              "We will create a empty .kambriarc then you can edit it later.\n";
-                handleCommonInfo(info);
+                handleInfo(info);
                 createEmptyRC();
             }
             else
@@ -76,7 +76,7 @@ int main(const int argc, const char *argv[])
         // Handle fix option
         else if (strcmp(argv[1], "fix") == 0)
         {
-            handleCommonError("The fix function is not implemented yet!");
+            handleError("The fix function is not implemented yet!");
         }
         // Hanlde help
         else if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
@@ -87,7 +87,7 @@ int main(const int argc, const char *argv[])
         else
         {
             char *invalid_params = "Invalid parameters.";
-            handleCommonError(invalid_params);
+            handleError(invalid_params);
         }
     }
     else
