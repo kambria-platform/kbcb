@@ -8,6 +8,11 @@ Kambria codebase client is a tool that afilitate developers to integrate thier r
 
 ```
 sudo apt-get install cmake
+```
+
+## Debian build tools
+
+```
 sudo apt-get install dh-make devscripts
 ```
 
@@ -25,19 +30,34 @@ Now you can push and do anything with your repo as usual.
 
 # For contributors
 
-## Rebuild makefile
+This package is based on CMake to build package. The files you need to focus are `build.sh`, `start.sh` and `debian/changelog`.
 
-In case you has changed some things in following category, you should do this session to rebuild the makefiles.
+## changelog
 
-* Add new `Makefile.am`
-* Modify `configure.ac` (Linking new lib, changing package version, et al.)
-* Somethings you understand and would like to rebuild.
+You need to update this file frequently when you want to update the upstream package or release a new one.
 
-To rebuild,
+The package version is followed debian standard `<version-revision>`.
+
+If you would like to update the upstream package, update the `revision`.
+
+If you would like to release the new one, change the `version`.
+
+## start.sh
+
+This file let you build and test the package in `development` environment.
+
+To run (stay at the source root),
 
 ```
-> sh autogen.sh
-> ./configure
-> make
+sh start.sh
 ```
 
+## build.sh
+
+This file let you build the package in `production` environment. Packging folder would appear in `packages` folder.
+
+To run (stay at the source root),
+
+```
+sh build.sh
+```

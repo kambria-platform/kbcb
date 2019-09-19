@@ -8,6 +8,7 @@ read -p "Input version [kbcb-<version>]:" version
 package=kbcb-$version
 
 # Create package dir
+mkdir ./packages
 cd ./packages
 rm -rf $package
 mkdir -p ./$package/$package
@@ -15,7 +16,7 @@ mkdir -p ./$package/$package
 # Copy source to new package dir
 cd ..
 cp README.md ./debian/README.Debian
-cp -r debian include lib src CMakeLists.txt ./packages/$package/$package
+cp -r debian include src CMakeLists.txt ./packages/$package/$package
 
 # Build source (For testing purpose)
 # When build package,
