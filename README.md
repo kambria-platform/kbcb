@@ -4,7 +4,7 @@ Kambria codebase CLI is a command-line tool that afilitates developers to integr
 
 # How to install
 
-You can download [the newest version](https://github.com/kambria-platform/kbcb/blob/master/packages/kbcb-0.0.1/kbcb_0.0.1-2_amd64.deb) and then install with root user.
+You can download [the newest version](https://github.com/kambria-platform/kbcb/blob/master/packages/debian/kbcb-0.0.1/kbcb_0.0.1-2_amd64.deb) and then install with root user.
 
 ```
 sudo gdebi -n <path_to_the_package>
