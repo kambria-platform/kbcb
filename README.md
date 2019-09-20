@@ -1,6 +1,6 @@
-# Kambria Codebase Client (kbcb)
+# Kambria Codebase VLI (kbcb)
 
-Kambria codebase client is a tool that afilitate developers to integrate thier repositories to Kambria codebase system.
+Kambria codebase CLI is a command-line tool that afilitates developers to integrate their repositories to Kambria codebase system.
 
 # Prerequisite
 
