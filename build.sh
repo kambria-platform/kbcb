@@ -6,22 +6,23 @@
 # Get package version
 read -p "Input version [kbcb-<version>]:" version
 package=kbcb-$version
+build_path=./packages/debian
 
 # Create package dir
-mkdir ./packages
-cd ./packages
+mkdir -p $build_path
+cd $build_path
 rm -rf $package
 mkdir -p ./$package/$package
 
 # Copy source to new package dir
-cd ..
+cd ../..
 cp README.md ./debian/README.Debian
-cp -r debian include src CMakeLists.txt ./packages/$package/$package
+cp -r debian include src CMakeLists.txt $build_path/$package/$package
 
 # Build source (For testing purpose)
 # When build package,
 # debbuild uses dh_auto_configure which defined in debian/rules
-cd ./packages/$package/$package
+cd $build_path/$package/$package
 mkdir ./build
 cd ./build
 cmake .. -DENV="PRODUCTION"

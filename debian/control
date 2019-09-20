@@ -12,5 +12,5 @@ Package: kbcb
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, git
 Description: Kambria Codebase package <kbcb>
- kbcb is Kambria Codebase Client that help developer to 
+ kbcb is Kambria Codebase CLI that help developer to 
  quick connect their repository to Kambria Codebase.
