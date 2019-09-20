@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 
 # Config tp exit shell on error
 set -e
