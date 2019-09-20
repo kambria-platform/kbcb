@@ -27,7 +27,7 @@ make
 
 # Build package
 cd ../..
-tar -cvzf $package.tar.gz $package
+zip $package.zip $package
 
 LightGreen='\033[1;32m'
 NoColor='\033[0m'
