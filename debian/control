@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Tu Phan <tphanson@kambria.io>
 Build-Depends: cmake, debhelper (>= 11)
 Standards-Version: 4.1.3
-Homepage: app.kambria.io
+Homepage: https://app.kambria.io
 #Vcs-Browser: https://github.com/kambria-platform/kbcb
 #Vcs-Git: https://github.com/kambria-platform/kbcb.git
 
