@@ -18,9 +18,7 @@ mkdir -p ./$package/$package
 cd ../..
 cp -r include src CMakeLists.txt README.md $build_path/$package/$package
 
-# Build source (For testing purpose)
-# When build package,
-# debbuild uses dh_auto_configure which defined in debian/rules
+# Build source
 cd $build_path/$package/$package
 mkdir ./build
 cd ./build
