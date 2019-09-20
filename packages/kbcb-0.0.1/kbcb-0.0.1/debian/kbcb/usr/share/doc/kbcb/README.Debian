@@ -18,7 +18,7 @@ sudo apt-get install dh-make devscripts
 
 # How to use
 
-You must be in root folder of your repository.
+You should be in root folder of your repository.
 
 ```
 kbcb init
@@ -27,6 +27,12 @@ kbcb init
 Create your authentication key on Kambria Codebase website and add it to `.kambriarc` file.
 
 Now you can push and do anything with your repo as usual.
+
+For help,
+
+```
+kbcb --help
+```
 
 # For contributors
 
@@ -60,9 +66,9 @@ Then, you can test by,
 
 ## build.sh
 
-This file let you build the package in `production` environment. Packging folder would appear in `packages` folder.
+This file let you build the package in `production` environment. the built bundles would appear in `packages` folder.
 
-To run (stay at the source root),
+To build (stay at the source root),
 
 ```
 sh build.sh

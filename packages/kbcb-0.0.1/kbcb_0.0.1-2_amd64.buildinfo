@@ -4,20 +4,20 @@ Binary: kbcb
 Architecture: amd64 source
 Version: 0.0.1-2
 Checksums-Md5:
- 78369c33caa3fa87c6d4d9d8686dd052 769 kbcb_0.0.1-2.dsc
+ 51605466b5f04346c4f5b51efa924574 769 kbcb_0.0.1-2.dsc
  42f3f0e0d4814c3e513850d1cb08309a 2588 kbcb-dbgsym_0.0.1-2_amd64.deb
- 96a50aa922cff61db6f1ed3b5c9f33f3 6980 kbcb_0.0.1-2_amd64.deb
+ c7b336e3a188c32969cd4f8916e527bc 6988 kbcb_0.0.1-2_amd64.deb
 Checksums-Sha1:
- a2ae4efdb0a68897bb9defe8295cf462a4efec9b 769 kbcb_0.0.1-2.dsc
+ bb3a1161b7d57996f61854191c370ebc14027cb6 769 kbcb_0.0.1-2.dsc
  219b78ccb18a2296677f2dbda91e440f949ba357 2588 kbcb-dbgsym_0.0.1-2_amd64.deb
- 2df3b985560ba685eb381bdb04497c3d0c33c713 6980 kbcb_0.0.1-2_amd64.deb
+ bced7c0266d6aaf0b24e90c883d6093957a4524b 6988 kbcb_0.0.1-2_amd64.deb
 Checksums-Sha256:
- b829e0b4289b98e2882bec85c01984f4b69178a9588a531ff97ca7b74e4192c8 769 kbcb_0.0.1-2.dsc
+ 5e785773c4c9db9042b36a7fdafb8d10c2f1b972d58f40787be5fb58bf5ca61d 769 kbcb_0.0.1-2.dsc
  4400a68f58944659f40af3886737a4b0fda07b48e58fd61700e68983e045e6d1 2588 kbcb-dbgsym_0.0.1-2_amd64.deb
- 3bd456a0bb8aaf3a9d8335ebd699a2bb6c4f902e0658e14dcfaaf9bd5ce17fd7 6980 kbcb_0.0.1-2_amd64.deb
+ 11c90d4069fb4ac2d6cd966a1ec52fe309784a03b6f1838cba441c63b6971662 6988 kbcb_0.0.1-2_amd64.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Thu, 19 Sep 2019 03:02:33 -0700
+Build-Date: Thu, 19 Sep 2019 19:30:45 -0700
 Build-Tainted-By:
  merged-usr-via-symlinks
 Installed-Build-Depends:

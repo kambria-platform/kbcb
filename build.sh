@@ -31,7 +31,7 @@ make
 cd ../..
 tar -cvzf $package.tar.gz $package
 cd ./$package
-dh_make --file ../$package.tar.gz --copyright gpl2 --indep --yes
+dh_make --file ../$package.tar.gz --copyright gpl2 --indep
 debuild -us -uc
 
 # LightGreen='\033[1;32m'

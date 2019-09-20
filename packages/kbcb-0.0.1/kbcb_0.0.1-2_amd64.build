@@ -122,10 +122,10 @@ E: kbcb source: source-is-missing build/CMakeFiles/kbcb.dir/src/kbcb.c.o
 E: kbcb source: source-is-missing build/CMakeFiles/kbcb.dir/src/util.c.o
 W: kbcb source: bad-homepage app.kambria.io
 E: kbcb source: debian-rules-is-dh_make-template
+W: kbcb-dbgsym: debug-file-with-no-debug-symbols usr/lib/debug/.build-id/26/5f6b6a127599f424ea41ad305ff3814a2ea7f6.debug
 W: kbcb: debian-changelog-has-wrong-day-of-week 2019-09-19 is a Thursday
 E: kbcb: copyright-contains-dh_make-todo-boilerplate
 W: kbcb: spelling-error-in-readme-debian thier their
 W: kbcb: bad-homepage app.kambria.io
 W: kbcb: binary-without-manpage usr/bin/kbcb
-W: kbcb-dbgsym: debug-file-with-no-debug-symbols usr/lib/debug/.build-id/26/5f6b6a127599f424ea41ad305ff3814a2ea7f6.debug
 Finished running lintian.
