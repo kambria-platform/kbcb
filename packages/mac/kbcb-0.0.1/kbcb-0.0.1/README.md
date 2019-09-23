@@ -4,13 +4,24 @@ Kambria codebase CLI is a command-line tool that afilitates developers to integr
 
 # How to install
 
-You can download [the newest version](https://github.com/kambria-platform/kbcb/blob/master/packages/debian/kbcb-0.0.1/kbcb_0.0.1-2_amd64.deb) and then install with root user.
+## For Debian
+
+You can download [the newest version](https://github.com/kambria-platform/kbcb/blob/master/packages/debian/kbcb-0.0.1/kbcb_0.0.1-3_amd64.deb) and then install with root user.
 
 ```
 sudo gdebi -n <path_to_the_package>
 ```
 
 Or you may want to select another version of package. You could browse the `packages` folder by yourself. [Click here!](https://github.com/kambria-platform/kbcb/tree/master/packages)
+
+## For MacOS
+
+At the moment, the package is deliveried via [Homebrew](https://brew.sh/). First, you need to install `homebrew` and then install `kbcb`. If you have already installed `homebrew`, let's go forward,
+
+```
+brew update
+brew install kbcb
+```
 
 # How to use
 
@@ -38,7 +49,7 @@ This package is based on CMake to build package. The files you need to focus are
 
 The building machine must be a Debian distro.
 
-### CMake
+### CMake (Both Debian and MacOS needed)
 
 ```
 sudo apt-get install cmake
@@ -49,6 +60,10 @@ sudo apt-get install cmake
 ```
 sudo apt-get install dh-make devscripts
 ```
+
+### MacOs build tools
+
+You only need `homebrew`.
 
 ## changelog
 
@@ -79,6 +94,8 @@ Then, you can test by,
 ## build.sh
 
 This file let you build the package in `production` environment. the built bundles would appear in `packages` folder.
+
+You may have to clearify some info like arch, version for build process.
 
 To build (stay at the source root),
 
