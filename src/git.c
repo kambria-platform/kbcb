@@ -4,20 +4,14 @@
 #include "git.h"
 #include "util.h"
 
-#ifdef DEVELOPMENT
-  #define ENV "development"
-#else
-  #define ENV "production"
-#endif
-
-#define BUFFER_LENGTH 8
+#define GIT_BUFFER_LENGTH 8
 
 char *getGitPath()
 {
-  char *path = malloc(BUFFER_LENGTH);
+  char *path = malloc(GIT_BUFFER_LENGTH);
 
   FILE *fp;
-  char reader[BUFFER_LENGTH];
+  char reader[GIT_BUFFER_LENGTH];
   fp = popen("git rev-parse --show-toplevel", "r");
   if (fp == NULL)
   {
@@ -25,10 +19,10 @@ char *getGitPath()
     handleError(error_fp);
   }
 
-  while (fgets(reader, BUFFER_LENGTH, fp) != NULL)
+  while (fgets(reader, GIT_BUFFER_LENGTH, fp) != NULL)
   {
     strcat(path, reader);
-    path = realloc(path, strlen(path) + BUFFER_LENGTH);
+    path = realloc(path, strlen(path) + GIT_BUFFER_LENGTH);
   }
 
   pclose(fp);
@@ -43,10 +37,10 @@ char *getGitPath()
   return path;
 }
 
-char *getHookPath(char *filename)
+char *getHookPath(const char *filename)
 {
   char *git_path = getGitPath();
-  if (ENV == "development")
+  if (strcmp(getEnv(), "development") == 0)
   {
     char dist[] = "/dist/";
     git_path = realloc(git_path, strlen(git_path) + strlen(dist));
@@ -64,7 +58,7 @@ char *getHookPath(char *filename)
   return git_path;
 }
 
-void addRemote(char *remote, char *url)
+void addRemote(const char *remote, const char *url)
 {
   char git_add[] = "git remote add";
   char *cmd = malloc(strlen(git_add) + 1 + strlen(remote) + 1 + strlen(url) + 1);
@@ -83,7 +77,7 @@ void addRemote(char *remote, char *url)
   }
 }
 
-void removeRemote(char *remote)
+void removeRemote(const char *remote)
 {
   char git_add[] = "git remote remove";
   char *cmd = malloc(strlen(git_add) + 1 + strlen(remote) + 1);

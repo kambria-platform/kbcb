@@ -4,18 +4,13 @@
 #include "kambria.h"
 #include "util.h"
 
-#define STRINGIFY(string) #string
-#define PARSE(string) STRINGIFY(string)
-#define DATA_PATH PARSE(SHARED)
-
 void addHook()
 {
-  printf("==== %s\n", DATA_PATH);
   /**
    * Copy pre-hooks to user's git
    */
   FILE *input;
-  input = fopen(DATA_PATH, "r");
+  input = fopen(getDataPath(), "r");
   if (input == NULL)
   {
     char *error = "kbcb package met a critical damage, please reinstall the package and retry!";
@@ -35,7 +30,7 @@ void addHook()
   fclose(input);
 }
 
-void addKambriaRemote(char *repo_url)
+void addKambriaRemote(const char *repo_url)
 {
   addRemote("kambria", repo_url);
 }
@@ -55,7 +50,7 @@ void createEmptyRC()
   fclose(kambriarc);
 }
 
-void createRC(char *key)
+void createRC(const char *key)
 {
   FILE *kambriarc;
   char *kambriarc_path = getRootPath(".kambriarc");

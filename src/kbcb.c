@@ -3,17 +3,19 @@
 #include "util.h"
 #include "kambria.h"
 
-#define MAX_LENGTH 255
+#define KBCB_BUFFER_LENGTH 255
 
 int main(const int argc, const char *argv[])
 {
   if (argc >= 2)
   {
-    // Handle init option
+    /**
+     * Handle INIT option
+     */
     if (strcmp(argv[1], "init") == 0)
     {
-      char repo[MAX_LENGTH] = "empty";
-      char key[MAX_LENGTH] = "empty";
+      char repo[KBCB_BUFFER_LENGTH] = "empty";
+      char key[KBCB_BUFFER_LENGTH] = "empty";
 
       // Get params by options
       for (int i = 2; i < argc; i++)
@@ -36,13 +38,13 @@ int main(const int argc, const char *argv[])
       if (strcmp(repo, "empty") == 0)
       {
         printf("Repository URL: ");
-        fgets(repo, MAX_LENGTH, stdin);
+        fgets(repo, KBCB_BUFFER_LENGTH, stdin);
         repo[strcspn(repo, "\n")] = '\0'; // Remove newline
       }
       if (strcmp(key, "empty") == 0)
       {
         printf("Authentication key: ");
-        fgets(key, MAX_LENGTH, stdin);
+        fgets(key, KBCB_BUFFER_LENGTH, stdin);
         key[strcspn(key, "\n")] = '\0'; // Remove newline
       }
 
@@ -73,17 +75,41 @@ int main(const int argc, const char *argv[])
         createRC(key);
       }
     }
-    // Handle fix option
+
+    /**
+     * Handle FIX option
+     */
     else if (strcmp(argv[1], "fix") == 0)
     {
       handleError("The fix function is not implemented yet!");
     }
-    // Hanlde help
+
+    /**
+     * Handle GET option
+     */
+    else if (strcmp(argv[1], "get-dir") == 0)
+    {
+      // Get params by options
+      for (int i = 2; i < argc; i++)
+      {
+        if (strcmp(argv[i], "--pre-push") == 0)
+        {
+          handleInfo(getDataPath());
+        }
+      }
+    }
+
+    /**
+     * Hanlde HELP option
+     */
     else if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
     {
       showHelp();
     }
-    // Handle undefined option
+
+    /**
+     * Handle undefined option
+     */
     else
     {
       char *invalid_params = "Invalid parameters.";

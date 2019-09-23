@@ -1,8 +1,18 @@
 /**
- * Get root path of repo
- * Concate filename
+ * Get env
  */
-char *getRootPath(char *filename);
+char *getEnv();
+
+/**
+ * Get shared data path
+ */
+char *getDataPath();
+
+/**
+ * Get root path of repo concating filename
+ * @param - filename
+ */
+char *getRootPath(const char *filename);
 
 /**
  * Handle error
