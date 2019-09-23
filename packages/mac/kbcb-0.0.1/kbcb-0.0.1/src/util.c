@@ -27,7 +27,7 @@ char *getDataPath()
 char *getRootPath(const char *filename)
 {
   char *git_path = getGitPath();
-  if (strcmp(getEnv(), "development"))
+  if (strcmp(getEnv(), "development") == 0)
   {
     char dist[] = "/dist/";
     git_path = realloc(git_path, strlen(git_path) + strlen(dist));
