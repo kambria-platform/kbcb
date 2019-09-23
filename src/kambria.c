@@ -10,6 +10,7 @@
 
 void addHook()
 {
+  printf("==== %s\n", DATA_PATH);
   /**
    * Copy pre-hooks to user's git
    */
