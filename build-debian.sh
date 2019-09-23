@@ -20,12 +20,12 @@ cp README.md ./debian/README.Debian
 cp -r debian include src CMakeLists.txt $build_path/$package/$package
 
 # Build source (For testing purpose)
-# When build package,
+# When build package (debuild),
 # debbuild uses dh_auto_configure which defined in debian/rules
 cd $build_path/$package/$package
 mkdir ./build
 cd ./build
-cmake .. -DENV="PRODUCTION"
+cmake .. -DENV="PRODUCTION" -DSHARED="/usr/share/kbcb/pre-push"
 make
 
 # Build package

@@ -18,11 +18,13 @@ mkdir -p ./$package/$package
 cd ../..
 cp -r include src CMakeLists.txt README.md $build_path/$package/$package
 
-# Build source
+# Build source (For testing purpose)
+# When intsall package (homebrew),
+# homebrew will follow the formula to build package on user's machine
 cd $build_path/$package/$package
 mkdir ./build
 cd ./build
-cmake .. -DENV="PRODUCTION"
+cmake .. -DENV="PRODUCTION" -DSHARED="/usr/local/Cellar/kbcb/$version/share/pre-push"
 make
 
 # Build package
