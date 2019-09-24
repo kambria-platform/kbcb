@@ -2,7 +2,7 @@ class Kbcb < Formula
   desc "Afilitates developers to connect their projects to Kambria codebase"
   homepage "https://app.kambria.io"
   url "https://github.com/kambria-platform/kbcb/raw/develop/packages/mac/kbcb-0.0.1/kbcb-0.0.1.tar.gz"
-  sha256 "208b5a98bde93f77ba2f0ccd5a5a2315fe607f43c243cc29a51a561689cd45e0"
+  sha256 "41ef4f2c5b6c314afca4e17da8550b259179ca0b76edc4b25694e048b4af0753"
 
   depends_on "cmake" => :build
 
@@ -14,7 +14,7 @@ class Kbcb < Formula
       system "make"
     end
     bin.install "build/kbcb"
-    share.install "src/hooks/pre-push"
+    share.install "src/hooks/kambria-pre-push"
   end
 
   test do
