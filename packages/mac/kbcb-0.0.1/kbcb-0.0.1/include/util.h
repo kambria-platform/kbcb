@@ -31,3 +31,17 @@ void handleInfo(const char *message);
  * Show help info and exit program
  */
 void showHelp();
+
+/**
+ * Remove a specific line from a input filename
+ * @param line - specific string
+ * @param fpath - file path
+ * @param ftemp - temp file path
+ */
+void removeLineFromFile(char *line, char *fpath, char *ftemp);
+
+/**
+ * Set file as executable
+ * @param fpath - file path
+ */
+void setExecutable(char *fpath);

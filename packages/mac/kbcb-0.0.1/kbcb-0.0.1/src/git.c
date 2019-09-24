@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include "git.h"
 #include "util.h"
 
@@ -35,6 +36,19 @@ char *getGitPath()
 
   path[strcspn(path, "\n")] = '\0'; // Remove newline
   return path;
+}
+
+int checkHookExistence(char *filename)
+{
+  char *path = getHookPath(filename);
+  if (access(path, F_OK) != -1)
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
 }
 
 char *getHookPath(const char *filename)

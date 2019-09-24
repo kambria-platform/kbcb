@@ -4,6 +4,14 @@
 char *getGitPath();
 
 /**
+ * Check hook existence
+ * @param - hook name
+ * @return - 1 if existed
+ *         - 0 otherwise
+ */
+int checkHookExistence(char*filename);
+
+/**
  * Get hook path by filename
  * @param - hook name
  */
