@@ -121,8 +121,8 @@ E: kbcb source: source-is-missing build/CMakeFiles/kbcb.dir/src/kambria.c.o
 E: kbcb source: source-is-missing build/CMakeFiles/kbcb.dir/src/kbcb.c.o
 E: kbcb source: source-is-missing build/CMakeFiles/kbcb.dir/src/util.c.o
 E: kbcb source: debian-rules-is-dh_make-template
+W: kbcb-dbgsym: debug-file-with-no-debug-symbols usr/lib/debug/.build-id/ed/871946101a34d415b0a07322de9531554b673b.debug
 E: kbcb: copyright-contains-dh_make-todo-boilerplate
 W: kbcb: spelling-error-in-readme-debian clearify clarify
 W: kbcb: binary-without-manpage usr/bin/kbcb
-W: kbcb-dbgsym: debug-file-with-no-debug-symbols usr/lib/debug/.build-id/ed/871946101a34d415b0a07322de9531554b673b.debug
 Finished running lintian.
