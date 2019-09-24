@@ -39,3 +39,9 @@ void showHelp();
  * @param ftemp - temp file path
  */
 void removeLineFromFile(char *line, char *fpath, char *ftemp);
+
+/**
+ * Set file as executable
+ * @param fpath - file path
+ */
+void setExecutable(char *fpath);

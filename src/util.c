@@ -96,3 +96,20 @@ void removeLineFromFile(char *line, char *fpath, char *ftemp)
   remove(fpath);
   rename(ftemp, fpath);
 }
+
+void setExecutable(char *fpath)
+{
+  char chmod[] = "chmod +x";
+  char *cmd = malloc(strlen(chmod) + 1 + strlen(fpath) + 1);
+  strcpy(cmd, chmod);
+  strcat(cmd, " ");
+  strcat(cmd, fpath);
+
+  int error;
+  error = system(cmd);
+  free(cmd);
+  if (error != 0)
+  {
+    exit(1);
+  }
+}

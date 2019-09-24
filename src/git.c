@@ -7,7 +7,6 @@
 
 #define GIT_BUFFER_LENGTH 8
 
-
 char *getGitPath()
 {
   char *path = malloc(GIT_BUFFER_LENGTH);
@@ -39,7 +38,6 @@ char *getGitPath()
   return path;
 }
 
-
 int checkHookExistence(char *filename)
 {
   char *path = getHookPath(filename);
@@ -52,7 +50,6 @@ int checkHookExistence(char *filename)
     return 0;
   }
 }
-
 
 char *getHookPath(const char *filename)
 {
@@ -75,7 +72,6 @@ char *getHookPath(const char *filename)
   return git_path;
 }
 
-
 void addRemote(const char *remote, const char *url)
 {
   char git_add[] = "git remote add";
@@ -94,7 +90,6 @@ void addRemote(const char *remote, const char *url)
     exit(1);
   }
 }
-
 
 void removeRemote(const char *remote)
 {

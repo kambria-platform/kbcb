@@ -4,7 +4,6 @@
 #include "kambria.h"
 #include "util.h"
 
-
 void copyKambriaPrePush()
 {
   FILE *input;
@@ -27,12 +26,11 @@ void copyKambriaPrePush()
   fclose(input);
 }
 
-
 void addExecutableCode()
 {
+  char *hook_path = getHookPath("pre-push");
   if (checkHookExistence("pre-push") == 1)
   {
-    char *hook_path = getHookPath("pre-push");
     char *temp_path = getHookPath("temp-pre-push");
     removeLineFromFile("sh ./kambria-pre-push\n", hook_path, temp_path);
     removeLineFromFile("exit 0\n", hook_path, temp_path);
@@ -45,7 +43,6 @@ void addExecutableCode()
     output = fopen(hook_path, "a");
     fputs(executableCode, output);
 
-    free(hook_path);
     free(temp_path);
     fclose(output);
   }
@@ -61,11 +58,12 @@ void addExecutableCode()
     output = fopen(hook_path, "w");
     fputs(executableCode, output);
 
-    free(hook_path);
     fclose(output);
   }
-}
 
+  setExecutable(hook_path);
+  free(hook_path);
+}
 
 void addHook()
 {
@@ -75,18 +73,15 @@ void addHook()
   addExecutableCode();
 }
 
-
 void addKambriaRemote(const char *repo_url)
 {
   addRemote("kambria", repo_url);
 }
 
-
 void removeKambriaRemote()
 {
   removeRemote("kambria");
 }
-
 
 void createEmptyRC()
 {
@@ -97,7 +92,6 @@ void createEmptyRC()
   free(kambriarc_path);
   fclose(kambriarc);
 }
-
 
 void createRC(const char *key)
 {
