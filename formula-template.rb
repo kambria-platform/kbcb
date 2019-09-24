@@ -2,7 +2,7 @@ class Kbcb < Formula
   desc "Afilitates developers to connect their projects to Kambria codebase"
   homepage "https://app.kambria.io"
   url "https://github.com/kambria-platform/kbcb/raw/develop/packages/mac/kbcb-0.0.1/kbcb-0.0.1.tar.gz"
-  sha256 "41ef4f2c5b6c314afca4e17da8550b259179ca0b76edc4b25694e048b4af0753"
+  sha256 "36ef2417d138329001b0b9e03f01f806b188c0e44361efc8dd937503ff771913"
 
   depends_on "cmake" => :build
 
@@ -11,7 +11,7 @@ class Kbcb < Formula
     mkdir("build")
     Dir.chdir("./build") do
       system "cmake", "..",
-        "-DENV=\"PRODUCTION\"", 
+        "-DENV=\"PRODUCTION\"",
         "-DSHARED=\"/usr/local/Cellar/kbcb/#{version}/share/kambria-pre-push\"",
         "-DVER=\"#{version}\""
       system "make"
