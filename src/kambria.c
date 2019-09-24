@@ -22,6 +22,7 @@ void copyKambriaPrePush()
     fputc(c, output);
   }
 
+  setExecutable(hook_path);
   free(hook_path);
   fclose(input);
 }

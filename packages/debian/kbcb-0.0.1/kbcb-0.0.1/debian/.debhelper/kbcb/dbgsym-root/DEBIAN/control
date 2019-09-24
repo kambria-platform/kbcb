@@ -9,4 +9,4 @@ Depends: kbcb (= 0.0.1-4)
 Section: debug
 Priority: optional
 Description: debug symbols for kbcb
-Build-Ids: 2df94cb2a45f6c9c2f43abe4794dfe63a3a7a253
+Build-Ids: 45d507bb371adfa0b3e9f3cc35a40bbd505ce891
