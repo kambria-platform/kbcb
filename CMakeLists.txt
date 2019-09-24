@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
 
 set(PROJECT kbcb)
-set(CMAKE_C_FLAGS "${CMAKE_CFLAGS} -D${ENV} -DSHARED=${SHARED}")
+set(CMAKE_C_FLAGS "${CMAKE_CFLAGS} -D${ENV} -DSHARED=${SHARED} -DVER=${VER}")
 
 include_directories(include)
 

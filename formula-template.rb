@@ -10,7 +10,10 @@ class Kbcb < Formula
     rm_rf("build")
     mkdir("build")
     Dir.chdir("./build") do
-      system "cmake", "..", "-DENV=\"PRODUCTION\"", "-DSHARED=\"/usr/local/Cellar/kbcb/#{version}/share/kambria-pre-push\""
+      system "cmake", "..",
+        "-DENV=\"PRODUCTION\"", 
+        "-DSHARED=\"/usr/local/Cellar/kbcb/#{version}/share/kambria-pre-push\"",
+        "-DVER=\"#{version}\""
       system "make"
     end
     bin.install "build/kbcb"

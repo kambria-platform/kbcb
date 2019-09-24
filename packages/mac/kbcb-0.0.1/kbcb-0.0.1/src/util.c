@@ -7,6 +7,7 @@
 #define STRINGIFY(string) #string
 #define PARSE(string) STRINGIFY(string)
 #define DATA_PATH PARSE(SHARED)
+#define VERSION PARSE(VER)
 
 #ifdef DEVELOPMENT
 #define ENV "development"
@@ -19,6 +20,11 @@
 char *getEnv()
 {
   return ENV;
+}
+
+char *getVer()
+{
+  return VERSION;
 }
 
 char *getDataPath()

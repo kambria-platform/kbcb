@@ -24,7 +24,7 @@ cp -r include src CMakeLists.txt README.md $build_path/$package/$package
 cd $build_path/$package/$package
 mkdir ./build
 cd ./build
-cmake .. -DENV="PRODUCTION" -DSHARED="/usr/local/Cellar/kbcb/$version/share/kambria-pre-push"
+cmake .. -DENV="PRODUCTION" -DSHARED="/usr/local/Cellar/kbcb/$version/share/kambria-pre-push" -DVER="$version"
 make
 
 # Build package

@@ -4,6 +4,11 @@
 char *getEnv();
 
 /**
+ * Get version
+ */
+char *getVer();
+
+/**
  * Get shared data path
  */
 char *getDataPath();

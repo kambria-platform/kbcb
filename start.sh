@@ -14,5 +14,5 @@ mkdir ./build
 
 # Build
 cd ./build 
-cmake .. -DENV="DEVELOPMENT" -DSHARED="$rootpath/src/hooks/kambria-pre-push"
+cmake .. -DENV="DEVELOPMENT" -DSHARED="$rootpath/src/hooks/kambria-pre-push" -DVER="0.0.0"
 make

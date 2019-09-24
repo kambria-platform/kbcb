@@ -100,6 +100,14 @@ int main(const int argc, const char *argv[])
     }
 
     /**
+     * Hanlde VERSION option
+     */
+    else if (strcmp(argv[1], "-v") == 0 || strcmp(argv[1], "--version") == 0)
+    {
+      handleInfo(getVer());
+    }
+
+    /**
      * Hanlde HELP option
      */
     else if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
