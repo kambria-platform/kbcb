@@ -16,20 +16,20 @@ Changes:
    * Flexible pre-push file (creating if not exist, otherwise, appending)
    * Automatically set pre-push as executable
 Checksums-Sha1:
- df84673b720906b0cbb48705fbefd961edb30e40 777 kbcb_0.0.1-4.dsc
+ ee75a4cc1845365ea35acc9b3879848561181b70 777 kbcb_0.0.1-4.dsc
  0b3a4702a04f8ce543a8b37300642982fbef77ea 2928 kbcb_0.0.1-4.debian.tar.xz
- ebb0a9b74da0b27548bcc16f51581812b2409e76 2728 kbcb-dbgsym_0.0.1-4_amd64.deb
- 99b180fcaece5bb8f6c99d5de66a3247fa2704a0 5631 kbcb_0.0.1-4_amd64.buildinfo
- 600e457985b5c41dfe5b12bdfe2af8fbc9ce3358 8260 kbcb_0.0.1-4_amd64.deb
+ c334fada8a01bbbf3276336a7f841ef410c0d255 2724 kbcb-dbgsym_0.0.1-4_amd64.deb
+ a60407fa7178649bdcf588b0704cd20b32a28caf 5631 kbcb_0.0.1-4_amd64.buildinfo
+ 47280c49e17a1366e1f018670d836ff4eef154cd 8276 kbcb_0.0.1-4_amd64.deb
 Checksums-Sha256:
- 6ba0f2231b3533a89eaace5d9da5d53655514b7231e378f1b823e18e8d21b670 777 kbcb_0.0.1-4.dsc
+ bf037c9c0a8c601d9137e76277dce56a1a268d1bfea9fa4afb2064e1f5842ffe 777 kbcb_0.0.1-4.dsc
  921019d362303f8465773342355baf0e226b3801a6e594fcca244c3377fd60d0 2928 kbcb_0.0.1-4.debian.tar.xz
- 14b1246c2c5302a9c09fe5580dedfb57f64b36aee02d13ed33a168b510855317 2728 kbcb-dbgsym_0.0.1-4_amd64.deb
- 198649e8b8effda8996d1e74b37f2e5507d9928e985148409fae98e034d24639 5631 kbcb_0.0.1-4_amd64.buildinfo
- 2831dc6daf2a6ecf4c49dc9d5ebb3c2629e71c8ccc9d2ddee6bc4991a170ade7 8260 kbcb_0.0.1-4_amd64.deb
+ 6b691a23928831298f2b50425ad07732c1160a79ca2ec8cef0b023a34cf4f15a 2724 kbcb-dbgsym_0.0.1-4_amd64.deb
+ 39bcfaa3f10d561818c3ac1846cb3e82571f76c9c2cf9a0a2bb673b3548f45e6 5631 kbcb_0.0.1-4_amd64.buildinfo
+ 950614497cb96facfc4b623b80a166e1530e6affb2369b3689dfca516b80bdc2 8276 kbcb_0.0.1-4_amd64.deb
 Files:
- e32ad3536627a9b50e18dca8fa65d7aa 777 devel optional kbcb_0.0.1-4.dsc
+ 31095ed9401fffb005caa15e0d146070 777 devel optional kbcb_0.0.1-4.dsc
  6ff115c6ef358e58e3f55404aa270ba2 2928 devel optional kbcb_0.0.1-4.debian.tar.xz
- af57bf16c752e6e0f3924eeec75b1532 2728 debug optional kbcb-dbgsym_0.0.1-4_amd64.deb
- 0d67d733060e91834fea2fd22d715172 5631 devel optional kbcb_0.0.1-4_amd64.buildinfo
- 8a87f5626dae48effffb99fa850eee5e 8260 devel optional kbcb_0.0.1-4_amd64.deb
+ 8dd1a7403c3a8c7d00f35e8ca2c93b2d 2724 debug optional kbcb-dbgsym_0.0.1-4_amd64.deb
+ c8a298f399e6ef040f31546e358b0b04 5631 devel optional kbcb_0.0.1-4_amd64.buildinfo
+ d72a2dd9d47475d3df20eba926357bbf 8276 devel optional kbcb_0.0.1-4_amd64.deb
