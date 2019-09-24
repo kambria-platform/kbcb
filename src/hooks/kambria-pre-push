@@ -8,9 +8,7 @@ KAMBRIA_VAR_TOKEN=`cat $KAMBRIA_SRC_DIR/.kambriarc`
 if [ "$KAMBRIA_VAR_REMOTE" != "kambria" ]
 then
   echo "********** Kambria Codebase **********"
-  echo "Pushing..."
   git -c http.extraheader="Kambria-Git-Key: $KAMBRIA_VAR_TOKEN" push kambria
-  echo "Done!"
   echo "**************************************"
 fi
 
