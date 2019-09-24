@@ -2,6 +2,8 @@ kbcb (0.0.1-4) unstable; urgency=medium
 
   * Flexible pre-push file (creating if not exist, otherwise, appending)
   * Automatically set pre-push as executable
+  * Flexibale .kambriarc path
+  * Query version
 
  -- Tu Phan <tphanson@kambria.io>  Tue, 24 Sep 2019 11:35:03 +0700
 

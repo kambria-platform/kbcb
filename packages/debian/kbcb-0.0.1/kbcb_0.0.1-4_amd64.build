@@ -68,16 +68,16 @@ make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/k
 make -f CMakeFiles/kbcb.dir/build.make CMakeFiles/kbcb.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu'
 [ 20%] Building C object CMakeFiles/kbcb.dir/src/git.c.o
-/usr/bin/cc  -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/include  -DPRODUCTION -DSHARED=   -o CMakeFiles/kbcb.dir/src/git.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/src/git.c
+/usr/bin/cc  -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/include  -DPRODUCTION -DSHARED= -DVER=   -o CMakeFiles/kbcb.dir/src/git.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/src/git.c
 [ 40%] Building C object CMakeFiles/kbcb.dir/src/kambria.c.o
-/usr/bin/cc  -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/include  -DPRODUCTION -DSHARED=   -o CMakeFiles/kbcb.dir/src/kambria.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/src/kambria.c
+/usr/bin/cc  -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/include  -DPRODUCTION -DSHARED= -DVER=   -o CMakeFiles/kbcb.dir/src/kambria.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/src/kambria.c
 [ 60%] Building C object CMakeFiles/kbcb.dir/src/kbcb.c.o
-/usr/bin/cc  -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/include  -DPRODUCTION -DSHARED=   -o CMakeFiles/kbcb.dir/src/kbcb.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/src/kbcb.c
+/usr/bin/cc  -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/include  -DPRODUCTION -DSHARED= -DVER=   -o CMakeFiles/kbcb.dir/src/kbcb.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/src/kbcb.c
 [ 80%] Building C object CMakeFiles/kbcb.dir/src/util.c.o
-/usr/bin/cc  -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/include  -DPRODUCTION -DSHARED=   -o CMakeFiles/kbcb.dir/src/util.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/src/util.c
+/usr/bin/cc  -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/include  -DPRODUCTION -DSHARED= -DVER=   -o CMakeFiles/kbcb.dir/src/util.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/src/util.c
 [100%] Linking C executable kbcb
 /usr/bin/cmake -E cmake_link_script CMakeFiles/kbcb.dir/link.txt --verbose=1
-/usr/bin/cc  -DPRODUCTION -DSHARED=  -Wl,-z,relro -rdynamic CMakeFiles/kbcb.dir/src/git.c.o CMakeFiles/kbcb.dir/src/kambria.c.o CMakeFiles/kbcb.dir/src/kbcb.c.o CMakeFiles/kbcb.dir/src/util.c.o  -o kbcb 
+/usr/bin/cc  -DPRODUCTION -DSHARED= -DVER=  -Wl,-z,relro -rdynamic CMakeFiles/kbcb.dir/src/git.c.o CMakeFiles/kbcb.dir/src/kambria.c.o CMakeFiles/kbcb.dir/src/kbcb.c.o CMakeFiles/kbcb.dir/src/util.c.o  -o kbcb 
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu'
 [100%] Built target kbcb
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu'
@@ -124,5 +124,5 @@ E: kbcb source: debian-rules-is-dh_make-template
 E: kbcb: copyright-contains-dh_make-todo-boilerplate
 W: kbcb: spelling-error-in-readme-debian clearify clarify
 W: kbcb: binary-without-manpage usr/bin/kbcb
-W: kbcb-dbgsym: debug-file-with-no-debug-symbols usr/lib/debug/.build-id/5b/e3991c89a4f6fcb047140c6916169d242dd3ef.debug
+W: kbcb-dbgsym: debug-file-with-no-debug-symbols usr/lib/debug/.build-id/0b/dc2064e3107a5d0a5b14cc72596b6dcbc1c7a7.debug
 Finished running lintian.

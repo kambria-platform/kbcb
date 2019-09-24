@@ -7,6 +7,7 @@
 #define STRINGIFY(string) #string
 #define PARSE(string) STRINGIFY(string)
 #define DATA_PATH PARSE(SHARED)
+#define VERSION PARSE(VER)
 
 #ifdef DEVELOPMENT
 #define ENV "development"
@@ -19,6 +20,11 @@
 char *getEnv()
 {
   return ENV;
+}
+
+char *getVer()
+{
+  return VERSION;
 }
 
 char *getDataPath()
@@ -70,7 +76,8 @@ void showHelp()
                "\t-r --repo: \tAdd your repository url to remote.\n"
                "\t-k --key: \tAdd authentication key to .kambriarc.\n"
                "\t--force: \tForce to init new connection without caring about remote existence.\n"
-               "\t--pre-push: \tkambria-pre-push file."
+               "\t--pre-push: \tkambria-pre-push file.\n"
+               "\t-v --version: \tShow package version.\n"
                "\t-h --help: \tShow help information.";
   handleInfo(help);
   exit(0);

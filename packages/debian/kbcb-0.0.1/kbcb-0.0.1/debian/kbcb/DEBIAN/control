@@ -2,7 +2,7 @@ Package: kbcb
 Version: 0.0.1-4
 Architecture: amd64
 Maintainer: Tu Phan <tphanson@kambria.io>
-Installed-Size: 34
+Installed-Size: 38
 Depends: libc6 (>= 2.2.5), git
 Section: devel
 Priority: optional
