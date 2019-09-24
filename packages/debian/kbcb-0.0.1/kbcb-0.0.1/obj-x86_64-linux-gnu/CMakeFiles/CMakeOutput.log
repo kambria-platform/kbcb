@@ -28,15 +28,15 @@ The CXX compiler identification is GNU, found in "/home/tups/Desktop/kbcb/packag
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fad13/fast"
+Run Build Command:"/usr/bin/make" "cmTC_78080/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_fad13.dir/build.make CMakeFiles/cmTC_fad13.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_78080.dir/build.make CMakeFiles/cmTC_78080.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fad13.dir/testCCompiler.c.o
-/usr/bin/cc   -DPRODUCTION -DSHARED=    -o CMakeFiles/cmTC_fad13.dir/testCCompiler.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_fad13
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fad13.dir/link.txt --verbose=1
-/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_fad13.dir/testCCompiler.c.o  -o cmTC_fad13 
+Building C object CMakeFiles/cmTC_78080.dir/testCCompiler.c.o
+/usr/bin/cc   -DPRODUCTION -DSHARED=    -o CMakeFiles/cmTC_78080.dir/testCCompiler.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_78080
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78080.dir/link.txt --verbose=1
+/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_78080.dir/testCCompiler.c.o  -o cmTC_78080 
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 
@@ -44,15 +44,15 @@ make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/k
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_be452/fast"
+Run Build Command:"/usr/bin/make" "cmTC_48ec7/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_be452.dir/build.make CMakeFiles/cmTC_be452.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_48ec7.dir/build.make CMakeFiles/cmTC_48ec7.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_be452.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -DPRODUCTION -DSHARED=    -o CMakeFiles/cmTC_be452.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_be452
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be452.dir/link.txt --verbose=1
-/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro -v -rdynamic CMakeFiles/cmTC_be452.dir/CMakeCCompilerABI.c.o  -o cmTC_be452 
+Building C object CMakeFiles/cmTC_48ec7.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -DPRODUCTION -DSHARED=    -o CMakeFiles/cmTC_48ec7.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_48ec7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48ec7.dir/link.txt --verbose=1
+/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro -v -rdynamic CMakeFiles/cmTC_48ec7.dir/CMakeCCompilerABI.c.o  -o cmTC_48ec7 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper
@@ -64,9 +64,9 @@ Thread model: posix
 gcc version 8.3.0 (Debian 8.3.0-6) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-D' 'PRODUCTION' '-D' 'SHARED=' '-v' '-rdynamic' '-o' 'cmTC_be452' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHOpztS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_be452 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. -z relro CMakeFiles/cmTC_be452.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-D' 'PRODUCTION' '-D' 'SHARED=' '-v' '-rdynamic' '-o' 'cmTC_be452' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-D' 'PRODUCTION' '-D' 'SHARED=' '-v' '-rdynamic' '-o' 'cmTC_48ec7' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccILJxS4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_48ec7 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. -z relro CMakeFiles/cmTC_48ec7.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-D' 'PRODUCTION' '-D' 'SHARED=' '-v' '-rdynamic' '-o' 'cmTC_48ec7' '-mtune=generic' '-march=x86-64'
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 
@@ -75,15 +75,15 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_be452/fast"]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_48ec7/fast"]
   ignore line: [make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_be452.dir/build.make CMakeFiles/cmTC_be452.dir/build]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_48ec7.dir/build.make CMakeFiles/cmTC_48ec7.dir/build]
   ignore line: [make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_be452.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -DPRODUCTION -DSHARED=    -o CMakeFiles/cmTC_be452.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_be452]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be452.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro -v -rdynamic CMakeFiles/cmTC_be452.dir/CMakeCCompilerABI.c.o  -o cmTC_be452 ]
+  ignore line: [Building C object CMakeFiles/cmTC_48ec7.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -DPRODUCTION -DSHARED=    -o CMakeFiles/cmTC_48ec7.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_48ec7]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48ec7.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro -v -rdynamic CMakeFiles/cmTC_48ec7.dir/CMakeCCompilerABI.c.o  -o cmTC_48ec7 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper]
@@ -95,13 +95,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-D' 'PRODUCTION' '-D' 'SHARED=' '-v' '-rdynamic' '-o' 'cmTC_be452' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccHOpztS.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_be452 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. -z relro CMakeFiles/cmTC_be452.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' 'PRODUCTION' '-D' 'SHARED=' '-v' '-rdynamic' '-o' 'cmTC_48ec7' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccILJxS4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_48ec7 /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. -z relro CMakeFiles/cmTC_48ec7.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccHOpztS.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccILJxS4.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -117,7 +117,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_be452] ==> ignore
+    arg [cmTC_48ec7] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o] ==> ignore
@@ -130,7 +130,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../..]
     arg [-zrelro] ==> ignore
-    arg [CMakeFiles/cmTC_be452.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_48ec7.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -162,15 +162,15 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_80021/fast"
+Run Build Command:"/usr/bin/make" "cmTC_799d3/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_80021.dir/build.make CMakeFiles/cmTC_80021.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_799d3.dir/build.make CMakeFiles/cmTC_799d3.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_80021.dir/feature_tests.c.o
-/usr/bin/cc   -DPRODUCTION -DSHARED=    -std=c11 -o CMakeFiles/cmTC_80021.dir/feature_tests.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.c
-Linking C executable cmTC_80021
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80021.dir/link.txt --verbose=1
-/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_80021.dir/feature_tests.c.o  -o cmTC_80021 
+Building C object CMakeFiles/cmTC_799d3.dir/feature_tests.c.o
+/usr/bin/cc   -DPRODUCTION -DSHARED=    -std=c11 -o CMakeFiles/cmTC_799d3.dir/feature_tests.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.c
+Linking C executable cmTC_799d3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_799d3.dir/link.txt --verbose=1
+/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_799d3.dir/feature_tests.c.o  -o cmTC_799d3 
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 
@@ -184,15 +184,15 @@ make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/k
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_265ee/fast"
+Run Build Command:"/usr/bin/make" "cmTC_d0550/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_265ee.dir/build.make CMakeFiles/cmTC_265ee.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_d0550.dir/build.make CMakeFiles/cmTC_d0550.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_265ee.dir/feature_tests.c.o
-/usr/bin/cc   -DPRODUCTION -DSHARED=    -std=c99 -o CMakeFiles/cmTC_265ee.dir/feature_tests.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.c
-Linking C executable cmTC_265ee
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_265ee.dir/link.txt --verbose=1
-/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_265ee.dir/feature_tests.c.o  -o cmTC_265ee 
+Building C object CMakeFiles/cmTC_d0550.dir/feature_tests.c.o
+/usr/bin/cc   -DPRODUCTION -DSHARED=    -std=c99 -o CMakeFiles/cmTC_d0550.dir/feature_tests.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.c
+Linking C executable cmTC_d0550
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0550.dir/link.txt --verbose=1
+/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_d0550.dir/feature_tests.c.o  -o cmTC_d0550 
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 
@@ -206,15 +206,15 @@ make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/k
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8b322/fast"
+Run Build Command:"/usr/bin/make" "cmTC_ddf58/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_8b322.dir/build.make CMakeFiles/cmTC_8b322.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_ddf58.dir/build.make CMakeFiles/cmTC_ddf58.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8b322.dir/feature_tests.c.o
-/usr/bin/cc   -DPRODUCTION -DSHARED=    -std=c90 -o CMakeFiles/cmTC_8b322.dir/feature_tests.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.c
-Linking C executable cmTC_8b322
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b322.dir/link.txt --verbose=1
-/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_8b322.dir/feature_tests.c.o  -o cmTC_8b322 
+Building C object CMakeFiles/cmTC_ddf58.dir/feature_tests.c.o
+/usr/bin/cc   -DPRODUCTION -DSHARED=    -std=c90 -o CMakeFiles/cmTC_ddf58.dir/feature_tests.c.o   -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.c
+Linking C executable cmTC_ddf58
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddf58.dir/link.txt --verbose=1
+/usr/bin/cc  -DPRODUCTION -DSHARED=   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_ddf58.dir/feature_tests.c.o  -o cmTC_ddf58 
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 
@@ -226,15 +226,15 @@ make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/k
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_24e49/fast"
+Run Build Command:"/usr/bin/make" "cmTC_843e2/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_24e49.dir/build.make CMakeFiles/cmTC_24e49.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_843e2.dir/build.make CMakeFiles/cmTC_843e2.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_24e49.dir/testCXXCompiler.cxx.o
-/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -o CMakeFiles/cmTC_24e49.dir/testCXXCompiler.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_24e49
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24e49.dir/link.txt --verbose=1
-/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_24e49.dir/testCXXCompiler.cxx.o  -o cmTC_24e49 
+Building CXX object CMakeFiles/cmTC_843e2.dir/testCXXCompiler.cxx.o
+/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -o CMakeFiles/cmTC_843e2.dir/testCXXCompiler.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_843e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_843e2.dir/link.txt --verbose=1
+/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_843e2.dir/testCXXCompiler.cxx.o  -o cmTC_843e2 
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 
@@ -242,15 +242,15 @@ make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/k
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ca5ed/fast"
+Run Build Command:"/usr/bin/make" "cmTC_c67eb/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_ca5ed.dir/build.make CMakeFiles/cmTC_ca5ed.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_c67eb.dir/build.make CMakeFiles/cmTC_c67eb.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ca5ed.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -o CMakeFiles/cmTC_ca5ed.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_ca5ed
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca5ed.dir/link.txt --verbose=1
-/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro -v -rdynamic CMakeFiles/cmTC_ca5ed.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_ca5ed 
+Building CXX object CMakeFiles/cmTC_c67eb.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -o CMakeFiles/cmTC_c67eb.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_c67eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c67eb.dir/link.txt --verbose=1
+/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro -v -rdynamic CMakeFiles/cmTC_c67eb.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c67eb 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper
@@ -262,9 +262,9 @@ Thread model: posix
 gcc version 8.3.0 (Debian 8.3.0-6) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-g' '-O2' '-fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=.' '-fstack-protector-strong' '-Wformat=1' '-Werror=format-security' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-rdynamic' '-o' 'cmTC_ca5ed' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpSbwFi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ca5ed /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. -z relro CMakeFiles/cmTC_ca5ed.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-g' '-O2' '-fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=.' '-fstack-protector-strong' '-Wformat=1' '-Werror=format-security' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-rdynamic' '-o' 'cmTC_ca5ed' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+COLLECT_GCC_OPTIONS='-g' '-O2' '-fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=.' '-fstack-protector-strong' '-Wformat=1' '-Werror=format-security' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-rdynamic' '-o' 'cmTC_c67eb' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cciV51ob.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c67eb /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. -z relro CMakeFiles/cmTC_c67eb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-g' '-O2' '-fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=.' '-fstack-protector-strong' '-Wformat=1' '-Werror=format-security' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-rdynamic' '-o' 'cmTC_c67eb' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 
@@ -273,15 +273,15 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_ca5ed/fast"]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c67eb/fast"]
   ignore line: [make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_ca5ed.dir/build.make CMakeFiles/cmTC_ca5ed.dir/build]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c67eb.dir/build.make CMakeFiles/cmTC_c67eb.dir/build]
   ignore line: [make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_ca5ed.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -o CMakeFiles/cmTC_ca5ed.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_ca5ed]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca5ed.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro -v -rdynamic CMakeFiles/cmTC_ca5ed.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_ca5ed ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_c67eb.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -o CMakeFiles/cmTC_c67eb.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_c67eb]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c67eb.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro -v -rdynamic CMakeFiles/cmTC_c67eb.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c67eb ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper]
@@ -293,13 +293,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 8.3.0 (Debian 8.3.0-6) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/8/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=.' '-fstack-protector-strong' '-Wformat=1' '-Werror=format-security' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-rdynamic' '-o' 'cmTC_ca5ed' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpSbwFi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_ca5ed /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. -z relro CMakeFiles/cmTC_ca5ed.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=.' '-fstack-protector-strong' '-Wformat=1' '-Werror=format-security' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-v' '-rdynamic' '-o' 'cmTC_c67eb' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/8/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cciV51ob.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c67eb /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/8 -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/8/../../.. -z relro CMakeFiles/cmTC_c67eb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/8/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/8/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccpSbwFi.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cciV51ob.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -315,7 +315,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_ca5ed] ==> ignore
+    arg [cmTC_c67eb] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/8/crtbeginS.o] ==> ignore
@@ -328,7 +328,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/8/../../..]
     arg [-zrelro] ==> ignore
-    arg [CMakeFiles/cmTC_ca5ed.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_c67eb.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -356,15 +356,15 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_da5db/fast"
+Run Build Command:"/usr/bin/make" "cmTC_b8adc/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_da5db.dir/build.make CMakeFiles/cmTC_da5db.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_b8adc.dir/build.make CMakeFiles/cmTC_b8adc.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_da5db.dir/feature_tests.cxx.o
-/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -std=c++2a -o CMakeFiles/cmTC_da5db.dir/feature_tests.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_da5db
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da5db.dir/link.txt --verbose=1
-/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_da5db.dir/feature_tests.cxx.o  -o cmTC_da5db 
+Building CXX object CMakeFiles/cmTC_b8adc.dir/feature_tests.cxx.o
+/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -std=c++2a -o CMakeFiles/cmTC_b8adc.dir/feature_tests.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b8adc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8adc.dir/link.txt --verbose=1
+/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_b8adc.dir/feature_tests.cxx.o  -o cmTC_b8adc 
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 
@@ -431,15 +431,15 @@ make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/k
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fc2b8/fast"
+Run Build Command:"/usr/bin/make" "cmTC_e256f/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_fc2b8.dir/build.make CMakeFiles/cmTC_fc2b8.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_e256f.dir/build.make CMakeFiles/cmTC_e256f.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fc2b8.dir/feature_tests.cxx.o
-/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -std=c++17 -o CMakeFiles/cmTC_fc2b8.dir/feature_tests.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_fc2b8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc2b8.dir/link.txt --verbose=1
-/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_fc2b8.dir/feature_tests.cxx.o  -o cmTC_fc2b8 
+Building CXX object CMakeFiles/cmTC_e256f.dir/feature_tests.cxx.o
+/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -std=c++17 -o CMakeFiles/cmTC_e256f.dir/feature_tests.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_e256f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e256f.dir/link.txt --verbose=1
+/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_e256f.dir/feature_tests.cxx.o  -o cmTC_e256f 
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 
@@ -506,15 +506,15 @@ make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/k
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a877d/fast"
+Run Build Command:"/usr/bin/make" "cmTC_84374/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_a877d.dir/build.make CMakeFiles/cmTC_a877d.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_84374.dir/build.make CMakeFiles/cmTC_84374.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a877d.dir/feature_tests.cxx.o
-/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -std=c++14 -o CMakeFiles/cmTC_a877d.dir/feature_tests.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a877d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a877d.dir/link.txt --verbose=1
-/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_a877d.dir/feature_tests.cxx.o  -o cmTC_a877d 
+Building CXX object CMakeFiles/cmTC_84374.dir/feature_tests.cxx.o
+/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -std=c++14 -o CMakeFiles/cmTC_84374.dir/feature_tests.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_84374
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84374.dir/link.txt --verbose=1
+/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_84374.dir/feature_tests.cxx.o  -o cmTC_84374 
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 
@@ -581,15 +581,15 @@ make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/k
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f37a1/fast"
+Run Build Command:"/usr/bin/make" "cmTC_59335/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_f37a1.dir/build.make CMakeFiles/cmTC_f37a1.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_59335.dir/build.make CMakeFiles/cmTC_59335.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f37a1.dir/feature_tests.cxx.o
-/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -std=c++11 -o CMakeFiles/cmTC_f37a1.dir/feature_tests.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f37a1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f37a1.dir/link.txt --verbose=1
-/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_f37a1.dir/feature_tests.cxx.o  -o cmTC_f37a1 
+Building CXX object CMakeFiles/cmTC_59335.dir/feature_tests.cxx.o
+/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -std=c++11 -o CMakeFiles/cmTC_59335.dir/feature_tests.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_59335
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59335.dir/link.txt --verbose=1
+/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_59335.dir/feature_tests.cxx.o  -o cmTC_59335 
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 
@@ -656,15 +656,15 @@ make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/k
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_86959/fast"
+Run Build Command:"/usr/bin/make" "cmTC_bbf81/fast"
 make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_86959.dir/build.make CMakeFiles/cmTC_86959.dir/build
+/usr/bin/make -f CMakeFiles/cmTC_bbf81.dir/build.make CMakeFiles/cmTC_bbf81.dir/build
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_86959.dir/feature_tests.cxx.o
-/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -std=c++98 -o CMakeFiles/cmTC_86959.dir/feature_tests.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_86959
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86959.dir/link.txt --verbose=1
-/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_86959.dir/feature_tests.cxx.o  -o cmTC_86959 
+Building CXX object CMakeFiles/cmTC_bbf81.dir/feature_tests.cxx.o
+/usr/bin/c++    -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2    -std=c++98 -o CMakeFiles/cmTC_bbf81.dir/feature_tests.cxx.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_bbf81
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbf81.dir/link.txt --verbose=1
+/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -Wl,-z,relro  -rdynamic CMakeFiles/cmTC_bbf81.dir/feature_tests.cxx.o  -o cmTC_bbf81 
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp'
 

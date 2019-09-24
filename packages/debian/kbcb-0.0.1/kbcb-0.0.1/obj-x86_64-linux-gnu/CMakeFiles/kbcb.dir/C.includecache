@@ -19,6 +19,8 @@ stdlib.h
 -
 string.h
 -
+unistd.h
+-
 git.h
 /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/kbcb-0.0.1/src/git.h
 util.h

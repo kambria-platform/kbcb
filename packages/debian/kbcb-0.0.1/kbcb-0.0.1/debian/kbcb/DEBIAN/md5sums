@@ -1,5 +1,5 @@
-f50e8bf1a82d53d6adbb76939d4851eb  usr/bin/kbcb
+ec57b5409722e7922c9ffdf37d1527e6  usr/bin/kbcb
 df119cc297950b778f6bb68df2d33e3e  usr/share/doc/kbcb/README.Debian
-182e8e0b9e4ac532600afea4759bb67f  usr/share/doc/kbcb/changelog.Debian.gz
+7479819e71f664abb183beac94b0c884  usr/share/doc/kbcb/changelog.Debian.gz
 640a5d0026f405929a10bdfaa9279e0d  usr/share/doc/kbcb/copyright
-dcbfa9bf0f4faf6f4d4949c349ff73e5  usr/share/kbcb/pre-push
+762c883e20ce2ce525d052c47d505f1e  usr/share/kbcb/kambria-pre-push

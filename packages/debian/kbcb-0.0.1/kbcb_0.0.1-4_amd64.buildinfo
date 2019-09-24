@@ -2,22 +2,22 @@ Format: 1.0
 Source: kbcb
 Binary: kbcb
 Architecture: amd64 source
-Version: 0.0.1-3
+Version: 0.0.1-4
 Checksums-Md5:
- f4e6d81b283010ddb0f92883504428b9 777 kbcb_0.0.1-3.dsc
- 0e66545483b2ed6ec9f7beb8eab5cae6 2624 kbcb-dbgsym_0.0.1-3_amd64.deb
- fd270c003e8b6daa33de446ada1fb010 7560 kbcb_0.0.1-3_amd64.deb
+ 1a6015f88a1a0de61f45d371610bf10c 777 kbcb_0.0.1-4.dsc
+ 17eca27b54c002551de500f2c8d306d2 2708 kbcb-dbgsym_0.0.1-4_amd64.deb
+ 51722fb2a2fdb43561d935131a7aaa07 8152 kbcb_0.0.1-4_amd64.deb
 Checksums-Sha1:
- 3c8ceca66fb7188e5ff2e3bc32a6962d7b5494e0 777 kbcb_0.0.1-3.dsc
- 7af7e8dbf039479bc98521065d459deb924eb2ce 2624 kbcb-dbgsym_0.0.1-3_amd64.deb
- fb0716278892ffdbe333ada1bea0c55ef66813d8 7560 kbcb_0.0.1-3_amd64.deb
+ 6a2eec9c177913d48f1424a4a4ce550def1439af 777 kbcb_0.0.1-4.dsc
+ 16bec3dec260eeecc2c860b9f7622451985285a5 2708 kbcb-dbgsym_0.0.1-4_amd64.deb
+ 85c6ab0e42c3161dacc15ff12a255cf7c111f9fd 8152 kbcb_0.0.1-4_amd64.deb
 Checksums-Sha256:
- 9493f548f276c2a3bcd228b40e04e7592152b9131066818bb2601276911cf680 777 kbcb_0.0.1-3.dsc
- 9b70668dbaf8d1a3be8f2f0fe0c48c856e6f10c39ee5403f7330ae5586ea57d6 2624 kbcb-dbgsym_0.0.1-3_amd64.deb
- ed20ab49fa06b24ab0f3bdfe560dcb3ebeb6ff6e9c48872a5e9eff7ddac3e833 7560 kbcb_0.0.1-3_amd64.deb
+ 8273969ac573c0f5d158dc75463d5d68140a2ed69dec3b118ed6f60523007bb4 777 kbcb_0.0.1-4.dsc
+ 35d1d7a609b944914c52e45e8dbf574f3eeca9b07ffd0471de99cd6619fe8c4f 2708 kbcb-dbgsym_0.0.1-4_amd64.deb
+ 896336f486ad5edc9000e7b7f331c07281dcbf30d72a0e5290172a466a3f301c 8152 kbcb_0.0.1-4_amd64.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Mon, 23 Sep 2019 00:26:12 -0700
+Build-Date: Mon, 23 Sep 2019 21:45:12 -0700
 Build-Tainted-By:
  merged-usr-via-symlinks
 Installed-Build-Depends:
@@ -195,4 +195,4 @@ Installed-Build-Depends:
 Environment:
  DEB_BUILD_OPTIONS="parallel=1"
  LANG="en_US.UTF-8"
- SOURCE_DATE_EPOCH="1568358243"
+ SOURCE_DATE_EPOCH="1569299703"

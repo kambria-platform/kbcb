@@ -1,2 +1,2 @@
 build/kbcb usr/bin
-src/hooks/pre-push usr/share/kbcb
+src/hooks/kambria-pre-push usr/share/kbcb

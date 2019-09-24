@@ -1,2 +1,2 @@
 ./build/kbcb
-./src/hooks/pre-push
+./src/hooks/kambria-pre-push
