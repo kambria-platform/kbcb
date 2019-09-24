@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Tue, 24 Sep 2019 17:05:03 +0700
+Source: kbcb
+Binary: kbcb kbcb-dbgsym
+Architecture: source amd64
+Version: 0.0.1-5
+Distribution: unstable
+Urgency: medium
+Maintainer: Tu Phan <tphanson@kambria.io>
+Changed-By: Tu Phan <tphanson@kambria.io>
+Description:
+ kbcb       - Kambria Codebase package <kbcb>
+Changes:
+ kbcb (0.0.1-5) unstable; urgency=medium
+ .
+   * Fix shellscript params
+Checksums-Sha1:
+ bb8a2af76a07cb18e2005b98ec698247680df11a 777 kbcb_0.0.1-5.dsc
+ 285ccf7ed0acc511a973fc3e0c3fdd92a27f8cc3 2964 kbcb_0.0.1-5.debian.tar.xz
+ 2f44743148ec4a3267dd680dd1efd6c9a0cec585 2736 kbcb-dbgsym_0.0.1-5_amd64.deb
+ e587ff029eae06b8ef68ba348817be83d7b73605 5631 kbcb_0.0.1-5_amd64.buildinfo
+ bb711371c299a0299ea938b4dba6ae7b20318fe2 8404 kbcb_0.0.1-5_amd64.deb
+Checksums-Sha256:
+ 644e1d50018f1c5c7a3f855a1652acdc29396b7477f51236454d6b7204550208 777 kbcb_0.0.1-5.dsc
+ ef7d1c88f8dc93f209fe2ec9eb42f65659aa1dd4ba716890ca9ce9c077d4cca3 2964 kbcb_0.0.1-5.debian.tar.xz
+ 2f365d7b60a43f8e8289608ec227191f88c18f81535c4f65aaaf4097064d75cd 2736 kbcb-dbgsym_0.0.1-5_amd64.deb
+ 8daae02ca51562ef047366b81896bc834d295401f7e291bfa657289e1b75f563 5631 kbcb_0.0.1-5_amd64.buildinfo
+ e0acfbe4f20f05de4e04765613e10a1d09e9a15f12626fac73ac239146937af5 8404 kbcb_0.0.1-5_amd64.deb
+Files:
+ 1f5fcb6f4bb3a2f4591509fe87ef7d05 777 devel optional kbcb_0.0.1-5.dsc
+ b2acc7b633970f5fae4dc1c53e11afa9 2964 devel optional kbcb_0.0.1-5.debian.tar.xz
+ e98e4edc77916774a116ca3a0631ea1b 2736 debug optional kbcb-dbgsym_0.0.1-5_amd64.deb
+ 5b0f19006b4392e20758263a895ed387 5631 devel optional kbcb_0.0.1-5_amd64.buildinfo
+ 9c0a85ec55ba4fd6364fafb5e828540f 8404 devel optional kbcb_0.0.1-5_amd64.deb

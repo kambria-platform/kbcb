@@ -1,6 +1,6 @@
  dpkg-buildpackage -us -uc -ui
 dpkg-buildpackage: info: source package kbcb
-dpkg-buildpackage: info: source version 0.0.1-4
+dpkg-buildpackage: info: source version 0.0.1-5
 dpkg-buildpackage: info: source distribution unstable
 dpkg-buildpackage: info: source changed by Tu Phan <tphanson@kambria.io>
  dpkg-source --before-build .
@@ -11,8 +11,8 @@ dh clean
  dpkg-source -b .
 dpkg-source: info: using source format '3.0 (quilt)'
 dpkg-source: info: building kbcb using existing ./kbcb_0.0.1.orig.tar.gz
-dpkg-source: info: building kbcb in kbcb_0.0.1-4.debian.tar.xz
-dpkg-source: info: building kbcb in kbcb_0.0.1-4.dsc
+dpkg-source: info: building kbcb in kbcb_0.0.1-5.debian.tar.xz
+dpkg-source: info: building kbcb in kbcb_0.0.1-5.dsc
  debian/rules build
 make: 'build' is up to date.
  fakeroot debian/rules binary
@@ -104,14 +104,14 @@ make[1]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.1/k
    dh_gencontrol
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'kbcb' in '../kbcb_0.0.1-4_amd64.deb'.
-dpkg-deb: building package 'kbcb-dbgsym' in '../kbcb-dbgsym_0.0.1-4_amd64.deb'.
+dpkg-deb: building package 'kbcb' in '../kbcb_0.0.1-5_amd64.deb'.
+dpkg-deb: building package 'kbcb-dbgsym' in '../kbcb-dbgsym_0.0.1-5_amd64.deb'.
  dpkg-genbuildinfo
- dpkg-genchanges  >../kbcb_0.0.1-4_amd64.changes
+ dpkg-genchanges  >../kbcb_0.0.1-5_amd64.changes
 dpkg-genchanges: info: not including original source code in upload
  dpkg-source --after-build .
 dpkg-buildpackage: info: binary and diff upload (original source NOT included)
-Now running lintian kbcb_0.0.1-4_amd64.changes ...
+Now running lintian kbcb_0.0.1-5_amd64.changes ...
 E: kbcb source: source-is-missing build/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_C.bin
 E: kbcb source: source-is-missing build/CMakeFiles/3.13.4/CMakeDetermineCompilerABI_CXX.bin
 E: kbcb source: source-is-missing build/CMakeFiles/3.13.4/CompilerIdC/a.out
@@ -121,8 +121,8 @@ E: kbcb source: source-is-missing build/CMakeFiles/kbcb.dir/src/kambria.c.o
 E: kbcb source: source-is-missing build/CMakeFiles/kbcb.dir/src/kbcb.c.o
 E: kbcb source: source-is-missing build/CMakeFiles/kbcb.dir/src/util.c.o
 E: kbcb source: debian-rules-is-dh_make-template
+W: kbcb-dbgsym: debug-file-with-no-debug-symbols usr/lib/debug/.build-id/e7/d09ee085c25d33e00a3cb53378f28ec534ba3b.debug
 E: kbcb: copyright-contains-dh_make-todo-boilerplate
 W: kbcb: spelling-error-in-readme-debian clearify clarify
 W: kbcb: binary-without-manpage usr/bin/kbcb
-W: kbcb-dbgsym: debug-file-with-no-debug-symbols usr/lib/debug/.build-id/0b/dc2064e3107a5d0a5b14cc72596b6dcbc1c7a7.debug
 Finished running lintian.
