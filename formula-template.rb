@@ -10,7 +10,7 @@ class Kbcb < Formula
     rm_rf("build")
     mkdir("build")
     Dir.chdir("./build") do
-      system "cmake", "..", "-DENV=\"PRODUCTION\"", "-DSHARED=\"/usr/local/Cellar/kbcb/#{version}/share/pre-push\""
+      system "cmake", "..", "-DENV=\"PRODUCTION\"", "-DSHARED=\"/usr/local/Cellar/kbcb/#{version}/share/kambria-pre-push\""
       system "make"
     end
     bin.install "build/kbcb"
@@ -21,6 +21,6 @@ class Kbcb < Formula
     help = `kbcb --help`
     assert_not_equal nil, help
     shared_data = `kbcb get-dir --pre-push`
-    assert_equal shared_data, "/usr/local/Cellar/kbcb/#{version}/share/pre-push\n"
+    assert_equal shared_data, "/usr/local/Cellar/kbcb/#{version}/share/kambria-pre-push\n"
   end
 end

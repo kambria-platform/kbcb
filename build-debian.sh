@@ -25,7 +25,7 @@ cp -r debian include src CMakeLists.txt $build_path/$package/$package
 cd $build_path/$package/$package
 mkdir ./build
 cd ./build
-cmake .. -DENV="PRODUCTION" -DSHARED="/usr/share/kbcb/pre-push"
+cmake .. -DENV="PRODUCTION" -DSHARED="/usr/share/kbcb/kambria-pre-push"
 make
 
 # Build package

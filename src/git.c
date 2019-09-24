@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include "git.h"
 #include "util.h"
 
 #define GIT_BUFFER_LENGTH 8
+
 
 char *getGitPath()
 {
@@ -37,6 +39,21 @@ char *getGitPath()
   return path;
 }
 
+
+int checkHookExistence(char *filename)
+{
+  char *path = getHookPath(filename);
+  if (access(path, F_OK) != -1)
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
+}
+
+
 char *getHookPath(const char *filename)
 {
   char *git_path = getGitPath();
@@ -58,6 +75,7 @@ char *getHookPath(const char *filename)
   return git_path;
 }
 
+
 void addRemote(const char *remote, const char *url)
 {
   char git_add[] = "git remote add";
@@ -76,6 +94,7 @@ void addRemote(const char *remote, const char *url)
     exit(1);
   }
 }
+
 
 void removeRemote(const char *remote)
 {

@@ -14,6 +14,8 @@
 #define ENV "production"
 #endif
 
+#define UTIL_BUFFER_LENGTH 255
+
 char *getEnv()
 {
   return ENV;
@@ -68,8 +70,29 @@ void showHelp()
                "\t-r --repo: \tAdd your repository url to remote.\n"
                "\t-k --key: \tAdd authentication key to .kambriarc.\n"
                "\t--force: \tForce to init new connection without caring about remote existence.\n"
-               "\t--pre-push: \tpre-push file."
+               "\t--pre-push: \tkambria-pre-push file."
                "\t-h --help: \tShow help information.";
   handleInfo(help);
   exit(0);
+}
+
+void removeLineFromFile(char *line, char *fpath, char *ftemp)
+{
+  FILE *file, *temp;
+  char str[UTIL_BUFFER_LENGTH];
+  file = fopen(fpath, "r");
+  temp = fopen(ftemp, "w");
+
+  while (!feof(file))
+  {
+    fgets(str, UTIL_BUFFER_LENGTH, file);
+    if (strcmp(line, str) != 0)
+    {
+      fputs(str, temp);
+    }
+  }
+  fclose(file);
+  fclose(temp);
+  remove(fpath);
+  rename(ftemp, fpath);
 }
