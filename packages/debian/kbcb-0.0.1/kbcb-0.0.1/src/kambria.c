@@ -33,11 +33,11 @@ void addExecutableCode()
   if (checkHookExistence("pre-push") == 1)
   {
     char *temp_path = getHookPath("temp-pre-push");
-    removeLineFromFile("sh ./kambria-pre-push\n", hook_path, temp_path);
+    removeLineFromFile("KAMBRIA_SRC_DIR=`git rev-parse --show-toplevel`\n", hook_path, temp_path);
+    removeLineFromFile("sh $KAMBRIA_SRC_DIR/.git/hooks/kambria-pre-push\n", hook_path, temp_path);
     removeLineFromFile("exit 0\n", hook_path, temp_path);
 
-    char *executableCode = "\n"
-                           "KAMBRIA_SRC_DIR=`git rev-parse --show-toplevel`\n"
+    char *executableCode = "KAMBRIA_SRC_DIR=`git rev-parse --show-toplevel`\n"
                            "sh $KAMBRIA_SRC_DIR/.git/hooks/kambria-pre-push\n"
                            "\n"
                            "exit 0\n";

@@ -4,7 +4,6 @@ KAMBRIA_VAR_REMOTE="$1"
 
 KAMBRIA_SRC_DIR=`git rev-parse --show-toplevel`
 KAMBRIA_VAR_TOKEN=`cat $KAMBRIA_SRC_DIR/.kambriarc`
-echo $KAMBRIA_VAR_TOKEN
 
 if [ "$KAMBRIA_VAR_REMOTE" != "kambria" ]
 then
