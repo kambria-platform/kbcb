@@ -16,23 +16,23 @@ Changes:
    * Options to disconnect Kambria Codebase
    * Extra options for help and version
 Checksums-Sha1:
- f459e86c6bf1e8cd184912ca7d6f9e1263fabc4b 777 kbcb_0.0.2-1.dsc
- 3fbbf2bcd22d0e0bd83925d7d9fb6273efea6abd 52661 kbcb_0.0.2.orig.tar.gz
+ ce61f1e7ea8d152cc43d424e59bf28cd0a5dda8a 777 kbcb_0.0.2-1.dsc
+ 43e3d98839a3a7867ff55036a4692e6e6e1d5a1e 52713 kbcb_0.0.2.orig.tar.gz
  833f559e9acf8dbb16012f4a99223e9c600d9e61 3004 kbcb_0.0.2-1.debian.tar.xz
- 413064ee86f531d9f2273139d3704a40af0e9ad0 2784 kbcb-dbgsym_0.0.2-1_amd64.deb
- e47e4012c8f940757ab268371f343eaf151d9c18 5631 kbcb_0.0.2-1_amd64.buildinfo
- 11e43d30049bb50e2f5392e07ff939e252fe2fe5 9040 kbcb_0.0.2-1_amd64.deb
+ 4adf4025b9d3e6e5d4a475453fa0b4c138503173 2776 kbcb-dbgsym_0.0.2-1_amd64.deb
+ 9b49e85b64a4e02577a388f7440a282bebda9e8f 5631 kbcb_0.0.2-1_amd64.buildinfo
+ 52f8d86bc2b1449eefc29c27359cb14eea678b16 9036 kbcb_0.0.2-1_amd64.deb
 Checksums-Sha256:
- e5d4db295308c3c52fd762cefadab92e0473c0c1e89f579814f0ec8fd28c9e29 777 kbcb_0.0.2-1.dsc
- 02ebb3af1c4f335d52ffd4cb2279239beb34a6ce9b1b2283212649c0602ba32f 52661 kbcb_0.0.2.orig.tar.gz
+ 40cfe22255c9e56bc4c8a75cc1447480939bacc92f59de685f648648c89ab31d 777 kbcb_0.0.2-1.dsc
+ 1da13bcf352c98fd4d580418d88bfda3e1543fdb8cf5157cd416ce65141f0bbc 52713 kbcb_0.0.2.orig.tar.gz
  c200ad7ec49d461580ca0fc6f1ecb8bfedb2781415616d816cc5ae2a7d2e5c35 3004 kbcb_0.0.2-1.debian.tar.xz
- a9301ccc1e7349ab487cd0c93f743b5cce6e4083697f275689235d324a695263 2784 kbcb-dbgsym_0.0.2-1_amd64.deb
- cede4949e0dd2f3cee2e92107baf697fe01ca0b6cb5884dfb5642c840922b0ff 5631 kbcb_0.0.2-1_amd64.buildinfo
- eb428380052b3af6d595f8abe26721891db19568238885ebbd7a632649bea0a9 9040 kbcb_0.0.2-1_amd64.deb
+ 9e20275572b276c90c6a025593546d9268e60141abc60a70c4e7a6078ec46265 2776 kbcb-dbgsym_0.0.2-1_amd64.deb
+ d303dbdc0f748d7b8824a62bbfec706db940273300cb84d1f659a90b83fb00ac 5631 kbcb_0.0.2-1_amd64.buildinfo
+ c1568e8cbb38737b83b4d701d3d3eafac925e87b89b18eecd101df275acdee9f 9036 kbcb_0.0.2-1_amd64.deb
 Files:
- 422d5170a1b0293962f3d2b146a23d36 777 devel optional kbcb_0.0.2-1.dsc
- 5af73eac9968145deef2bbfbfa82500d 52661 devel optional kbcb_0.0.2.orig.tar.gz
+ a87b505f30874992c4ed6b707c7ba412 777 devel optional kbcb_0.0.2-1.dsc
+ 255ebf401623dde93618bafd08e9b29e 52713 devel optional kbcb_0.0.2.orig.tar.gz
  eeb78de1e7e3f3db35ba5104e580d7a3 3004 devel optional kbcb_0.0.2-1.debian.tar.xz
- 5dff0c863910fa079bf356fc38d553ae 2784 debug optional kbcb-dbgsym_0.0.2-1_amd64.deb
- cdc27c698adaee3151522cba221bc4ad 5631 devel optional kbcb_0.0.2-1_amd64.buildinfo
- a84d8524808a5892d86a0ba494b8d9f9 9040 devel optional kbcb_0.0.2-1_amd64.deb
+ 38a98a631cf6b56d09013f39e4578121 2776 debug optional kbcb-dbgsym_0.0.2-1_amd64.deb
+ e81878fbc278212fcdef39e14c3e906c 5631 devel optional kbcb_0.0.2-1_amd64.buildinfo
+ f2aa302b585f616eca34ca45925a8937 9036 devel optional kbcb_0.0.2-1_amd64.deb
