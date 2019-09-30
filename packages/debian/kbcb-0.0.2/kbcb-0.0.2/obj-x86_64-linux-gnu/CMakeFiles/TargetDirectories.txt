@@ -1,0 +1,3 @@
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.2/kbcb-0.0.2/obj-x86_64-linux-gnu/CMakeFiles/rebuild_cache.dir
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.2/kbcb-0.0.2/obj-x86_64-linux-gnu/CMakeFiles/kbcb.dir
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.2/kbcb-0.0.2/obj-x86_64-linux-gnu/CMakeFiles/edit_cache.dir

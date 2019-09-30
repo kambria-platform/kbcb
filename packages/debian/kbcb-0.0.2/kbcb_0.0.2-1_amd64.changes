@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 30 Sep 2019 13:15:03 +0700
+Source: kbcb
+Binary: kbcb kbcb-dbgsym
+Architecture: source amd64
+Version: 0.0.2-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Tu Phan <tphanson@kambria.io>
+Changed-By: Tu Phan <tphanson@kambria.io>
+Description:
+ kbcb       - Kambria Codebase package <kbcb>
+Changes:
+ kbcb (0.0.2-1) unstable; urgency=medium
+ .
+   * Options to disconnect Kambria Codebase
+   * Extra options for help and version
+Checksums-Sha1:
+ 94b9aaf2b14a93af08730e726d133604dd4a1b56 777 kbcb_0.0.2-1.dsc
+ 98cfbef0b54aa08326239d16243fd079ba77498e 52744 kbcb_0.0.2.orig.tar.gz
+ 833f559e9acf8dbb16012f4a99223e9c600d9e61 3004 kbcb_0.0.2-1.debian.tar.xz
+ 9cbc96e1dc64512352e589224120789ba1167914 2784 kbcb-dbgsym_0.0.2-1_amd64.deb
+ a6c0df6a379b17d4fc83ef70327b9b3491d968a0 5631 kbcb_0.0.2-1_amd64.buildinfo
+ c40b558f2a81818d5909fdf647ccf0f67c7afe6b 9048 kbcb_0.0.2-1_amd64.deb
+Checksums-Sha256:
+ 916150dd5c7e5c0ef77d3ce008d207672e520f289e4702313ca67c742c7da84d 777 kbcb_0.0.2-1.dsc
+ 97af8b7d8fcda53eb2b7c898db5a6bcfcff48d7152da2a4801c8a37880a86e6c 52744 kbcb_0.0.2.orig.tar.gz
+ c200ad7ec49d461580ca0fc6f1ecb8bfedb2781415616d816cc5ae2a7d2e5c35 3004 kbcb_0.0.2-1.debian.tar.xz
+ 05d7dbdaf113bf516b38567dfeeee1348235417c5357c98d8a69ae54178cfa85 2784 kbcb-dbgsym_0.0.2-1_amd64.deb
+ bdc025fa7e1fe22cd16f21e86e94bf0dd2f6a9a69cb0aead878cda84321071c9 5631 kbcb_0.0.2-1_amd64.buildinfo
+ c67e0e93f6b6a0c1f2644305b0992462dfb31d5ca684015a127233e3bf597632 9048 kbcb_0.0.2-1_amd64.deb
+Files:
+ 21a6b058a7456a60f4f22ef953812c0a 777 devel optional kbcb_0.0.2-1.dsc
+ 82912ea7da3748033ccab20963bd3f71 52744 devel optional kbcb_0.0.2.orig.tar.gz
+ eeb78de1e7e3f3db35ba5104e580d7a3 3004 devel optional kbcb_0.0.2-1.debian.tar.xz
+ 6f25c0057a12bd84900820c367745baf 2784 debug optional kbcb-dbgsym_0.0.2-1_amd64.deb
+ 670979cc5bb7be809510f6e945f66cdc 5631 devel optional kbcb_0.0.2-1_amd64.buildinfo
+ 8efe105106fef4be6dd1fc684fc82a91 9048 devel optional kbcb_0.0.2-1_amd64.deb
