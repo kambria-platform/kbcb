@@ -2,7 +2,7 @@ class Kbcb < Formula
   desc "Afilitates developers to connect their projects to Kambria codebase"
   homepage "https://app.kambria.io"
   url "https://github.com/kambria-platform/kbcb/raw/master/packages/mac/kbcb-0.0.2/kbcb-0.0.2.tar.gz"
-  sha256 "536fe4ec9ff9801dfdc1d17e651d8b4957540a8633f261a70c739bee2fd14640"
+  sha256 "e8f65a89a5266ab3fc01a46fb0b7c7e7941496d7ec0c4b39dceaba0583ec7af5"
 
   depends_on "cmake" => :build
 
