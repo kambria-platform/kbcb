@@ -121,6 +121,10 @@ void removeHook()
         printf("Error: Unnable to remove the file!\n");
       }
     }
+    else
+    {
+      printf("Done!\n");
+    }
     free(temp_path);
   }
   else
