@@ -93,11 +93,6 @@ void removeHook()
       printf("Error: Unnable to remove the file!\n");
     }
   }
-  else
-  {
-    printf("Error: File does not exist!\n");
-  }
-  free(kambria_hook_path);
   // Remove pre-push
   char *hook_path = getHookPath("pre-push");
   printf("*** Removing pre-push: %s - ", hook_path);
@@ -121,18 +116,12 @@ void removeHook()
         printf("Error: Unnable to remove the file!\n");
       }
     }
-    else
-    {
-      printf("Done!\n");
-    }
-
     free(temp_path);
   }
-  else
-  {
-    printf("Error: File does not exist!\n");
-  }
+
+  free(kambria_hook_path);
   free(hook_path);
+  printf("Done!\n");
 }
 
 void addKambriaRemote(const char *repo_url)
