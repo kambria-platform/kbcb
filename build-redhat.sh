@@ -6,7 +6,7 @@
 # Get package version
 read -p "Input version [kbcb-<version>]:" version
 package=kbcb-$version
-build_path=./packages/debian
+build_path=./packages/redhat
 
 # Create package dir
 mkdir -p $build_path
@@ -16,8 +16,7 @@ mkdir -p ./$package/$package
 
 # Copy source to new package dir
 cd ../..
-cp README.md ./debian/README.Debian
-cp -r debian include src CMakeLists.txt $build_path/$package/$package
+cp -r include src CMakeLists.txt $build_path/$package/$package
 
 # Build source (For testing purpose)
 # When build package (debuild),
@@ -32,8 +31,8 @@ make
 cd ../..
 tar -cvzf $package.tar.gz $package
 cd ./$package
-dh_make --file ../$package.tar.gz --copyright gpl2 --indep
-debuild -us -uc
+# dh_make --file ../$package.tar.gz --copyright gpl2 --indep
+# debuild -us -uc
 
 LightGreen='\033[1;32m'
 NoColor='\033[0m'

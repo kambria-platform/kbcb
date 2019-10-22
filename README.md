@@ -1,6 +1,6 @@
 # Kambria Codebase CLI (kbcb)
 
-Kambria codebase CLI is a command-line tool that afilitates developers to integrate their repositories to Kambria codebase system.
+Kambria codebase CLI is a command-line tool that afilitates developers to integrate their repositories to Kambria Codebase platform.
 
 # How to install
 

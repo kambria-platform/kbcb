@@ -34,5 +34,5 @@ tar -cvzf $package.tar.gz $package
 LightGreen='\033[1;32m'
 NoColor='\033[0m'
 echo ""
-echo "${LightGreen}$package was built completly!${NoColor}"
+echo "${LightGreen}$package was built completely!${NoColor}"
 echo ""
