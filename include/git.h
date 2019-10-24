@@ -1,7 +1,13 @@
 /**
  * Get git path
  */
-char *getGitPath();
+std::string getGitPath();
+
+/**
+ * Get hook path by filename
+ * @param - hook name
+ */
+std::string getHookPath(const std::string filename);
 
 /**
  * Check hook existence
@@ -9,23 +15,17 @@ char *getGitPath();
  * @return - 1 if existed
  *         - 0 otherwise
  */
-int checkHookExistence(char*filename);
-
-/**
- * Get hook path by filename
- * @param - hook name
- */
-char *getHookPath(const char *filename);
+bool checkHookExistence(const std::string filename);
 
 /**
  * Add git remote
  * @param - remote name
  * @param - repo url
  */
-void addRemote(const char *remote, const char *url);
+void addRemote(const std::string remote, const std::string url);
 
 /**
  * Remove git remote
  * @param - remote name
  */
-void removeRemote(const char *remote);
+void removeRemote(const std::string remote);

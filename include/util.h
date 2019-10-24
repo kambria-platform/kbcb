@@ -1,36 +1,37 @@
 /**
  * Get env
  */
-char *getEnv();
+std::string getEnv();
 
 /**
  * Get version
  */
-char *getVer();
+std::string getVer();
 
 /**
  * Get shared data path
  */
-char *getDataPath();
+std::string getDataPath();
 
 /**
  * Get root path of repo concating filename
  * @param - filename
  */
-char *getRootPath(const char *filename);
+std::string getRootPath(std::string filename);
 
 /**
  * Handle error
- * Show error and exit program
- * @param - message
+ * Show error to cerr and exit program
+ * @param - error message
  */
-void handleError(const char *messgae);
+void handleError(std::string messgae);
 
 /**
  * Handle info
- * @param - message
+ * Show info to clog
+ * @param - info message
  */
-void handleInfo(const char *message);
+void handleInfo(std::string message);
 
 /**
  * Show help info and exit program
@@ -43,16 +44,16 @@ void showHelp();
  * @param fpath - file path
  * @param ftemp - temp file path
  */
-void removeLineFromFile(char *line, char *fpath, char *ftemp);
+void removeLineFromFile(std::string line, std::string fpath, std::string ftemp);
 
 /**
  * Set file as executable
  * @param fpath - file path
  */
-void setExecutable(char *fpath);
+void setExecutable(std::string fpath);
 
 /**
  * Check if file is executable (contents executable code)
  * @param fpath - file path
  */
-int checkEmptyExectuableFile(char *fpath);
+bool checkEmptyExectuableFile(std::string fpath);

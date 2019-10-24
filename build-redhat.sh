@@ -4,7 +4,7 @@
 # set -e
 
 # Get package version
-read -p "Input version [kbcb-<version>]:" version
+read -p "Input version [kbcb-<version>]: " version
 package=kbcb-$version
 build_path=./packages/redhat
 

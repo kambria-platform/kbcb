@@ -1,12 +1,13 @@
 cmake_minimum_required(VERSION 3.0.0)
 
 set(PROJECT kbcb)
-set(CMAKE_C_FLAGS "${CMAKE_CFLAGS} -D${ENV} -DSHARED=${SHARED} -DVER=${VER}")
-
-include_directories(include)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXXFLAGS} -D${ENV} -DSHARED=${SHARED} -DVER=${VER}")
+set(VERSION 1)
 
 project(${PROJECT})
 
-file(GLOB SOURCES "src/*.c")
+include_directories(include)
+
+file(GLOB SOURCES "src/*.cpp")
 
 add_executable(${PROJECT} ${SOURCES})
