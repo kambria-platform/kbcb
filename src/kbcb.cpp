@@ -14,49 +14,51 @@ int main(const int argc, const char *argv[])
     /**
      * Handle INIT option
      */
-    if (strcmp(argv[1], "init") == 0)
+    string CMD(argv[1]);
+    if (CMD.compare("init") == 0)
     {
-      char repo[KBCB_BUFFER_LENGTH] = "empty";
-      char key[KBCB_BUFFER_LENGTH] = "empty";
+      string repo = "empty";
+      string key = "empty";
 
       // Get params by options
       for (int i = 2; i < argc; i++)
       {
-        if (strcmp(argv[i], "-r") == 0 || strcmp(argv[i], "--repo") == 0)
+        string OPT(argv[i]);
+        if (OPT.compare("-r") == 0 || OPT.compare("--repo") == 0)
         {
-          strcpy(repo, argv[i + 1]);
+          repo = OPT;
         }
-        if (strcmp(argv[i], "-k") == 0 || strcmp(argv[i], "--key") == 0)
+        if (OPT.compare("-k") == 0 || OPT.compare("--key") == 0)
         {
-          strcpy(key, argv[i + 1]);
+          key = OPT;
         }
-        if (strcmp(argv[i], "--force") == 0)
+        if (OPT.compare("--force") == 0)
         {
           removeKambriaRemote();
         }
       }
 
       // Get params manually
-      if (strcmp(repo, "empty") == 0)
+      if (repo.compare("empty") == 0)
       {
-        printf("Repository URL: ");
-        fgets(repo, KBCB_BUFFER_LENGTH, stdin);
-        repo[strcspn(repo, "\n")] = '\0'; // Remove newline
+        cout << "Repository URL: ";
+        cin >> repo;
+        repo = repo.substr(0, repo.size() - 1); // Remove newline
       }
-      if (strcmp(key, "empty") == 0)
+      if (key.compare("empty") == 0)
       {
-        printf("Authentication key: ");
-        fgets(key, KBCB_BUFFER_LENGTH, stdin);
-        key[strcspn(key, "\n")] = '\0'; // Remove newline
+        cout << "Authentication key: ";
+        cin >> key;
+        key = key.substr(0, key.size() - 1); // Remove newline
       }
 
       // Execute params
       // Repo related
-      if (strcmp(repo, "empty") == 0 || strlen(repo) == 0)
+      if (repo.compare("empty") == 0 || repo.length() == 0)
       {
         string error_repo = "\tYou cannot setup Kambria Codebase without your repository url.\n"
-                           "\tPlease create your repo on Kambria Codebase first.\n"
-                           "\tFor more detail, access app.kambria.io";
+                            "\tPlease create your repo on Kambria Codebase first.\n"
+                            "\tFor more detail, access app.kambria.io";
         handleError(error_repo);
       }
       else
@@ -65,10 +67,10 @@ int main(const int argc, const char *argv[])
         addKambriaRemote(repo);
       }
       // Key related
-      if (strcmp(key, "empty") == 0 || strlen(key) == 0)
+      if (key.compare("empty") == 0 || key.length() == 0)
       {
         string info = "You have skipped to input your key!\n"
-                     "We will create a empty .kambriarc then you can edit it later.\n";
+                      "We will create a empty .kambriarc then you can edit it later.\n";
         handleInfo(info);
         createEmptyRC();
       }
@@ -81,13 +83,14 @@ int main(const int argc, const char *argv[])
     /**
      * Handle DISCONNECT option
      */
-    else if (strcmp(argv[1], "disconnect") == 0)
+    else if (CMD.compare("disconnect") == 0)
     {
       int isStrict = 0;
       // Get params by options
       for (int i = 2; i < argc; i++)
       {
-        if (strcmp(argv[i], "-s") == 0 || strcmp(argv[i], "--strict") == 0)
+        string OPT(argv[i]);
+        if (OPT.compare("-s") == 0 || OPT.compare("--strict") == 0)
         {
           isStrict = 1;
         }
@@ -107,7 +110,7 @@ int main(const int argc, const char *argv[])
     /**
      * Handle FIX option
      */
-    else if (strcmp(argv[1], "fix") == 0)
+    else if (CMD.compare("fix") == 0)
     {
       handleError("The fix function is not implemented yet!");
     }
@@ -115,12 +118,13 @@ int main(const int argc, const char *argv[])
     /**
      * Handle GET option
      */
-    else if (strcmp(argv[1], "get-dir") == 0)
+    else if (CMD.compare("get-dir") == 0)
     {
       // Get params by options
       for (int i = 2; i < argc; i++)
       {
-        if (strcmp(argv[i], "--pre-push") == 0)
+        string OPT(argv[i]);
+        if (OPT.compare("--pre-push") == 0)
         {
           handleInfo(getDataPath());
         }
@@ -130,7 +134,7 @@ int main(const int argc, const char *argv[])
     /**
      * Handle VERSION option
      */
-    else if (strcmp(argv[1], "version") == 0 || strcmp(argv[1], "-v") == 0 || strcmp(argv[1], "--version") == 0)
+    else if (CMD.compare("version") == 0 || CMD.compare("-v") == 0 || CMD.compare("--version") == 0)
     {
       handleInfo(getVer());
     }
@@ -138,7 +142,7 @@ int main(const int argc, const char *argv[])
     /**
      * Handle HELP option
      */
-    else if (strcmp(argv[1], "help") == 0 || strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
+    else if (CMD.compare("help") == 0 || CMD.compare("-h") == 0 || CMD.compare("--help") == 0)
     {
       showHelp();
     }
