@@ -1,0 +1,15 @@
+#!/bin/sh
+
+KAMBRIA_VAR_REMOTE="$1"
+
+KAMBRIA_SRC_DIR=`git rev-parse --show-toplevel`
+KAMBRIA_VAR_TOKEN=`cat $KAMBRIA_SRC_DIR/.kambriarc`
+
+if [ "$KAMBRIA_VAR_REMOTE" != "kambria" ]
+then
+  echo "********** Kambria Codebase **********"
+  git -c http.extraheader="Kambria-Git-Key: $KAMBRIA_VAR_TOKEN" push kambria
+  echo "**************************************"
+fi
+
+exit 0

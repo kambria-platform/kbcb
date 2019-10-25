@@ -16,4 +16,4 @@ mkdir ./build
 cd ./build 
 cmake .. -DENV="development" -DSHARED="$rootpath/src/hooks/kambria-pre-push" -DVER="0.0.0"
 make
-# make install
+# sudo make install

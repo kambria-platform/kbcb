@@ -1,6 +1,6 @@
 # Kambria Codebase CLI (kbcb)
 
-Kambria codebase CLI is a command-line tool that afilitates developers to integrate their repositories to Kambria codebase system.
+Kambria codebase CLI is a command-line tool that afilitates developers to integrate their repositories to Kambria Codebase platform.
 
 # How to install
 
@@ -58,7 +58,7 @@ sudo apt-get install cmake
 ### Debian build tools
 
 ```
-sudo apt-get install dh-make devscripts
+sudo apt-get install dh-make devscripts debhelper
 ```
 
 ### MacOs build tools

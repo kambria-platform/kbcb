@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # Config tp exit shell on error
-set -e
+# set -e
 
 # Get package version
 read -p "Input version [kbcb-<version>]: " version
 package=kbcb-$version
-build_path=./packages/mac
+build_path=./packages/debian
 
 # Create package dir
 mkdir -p $build_path
@@ -16,20 +16,25 @@ mkdir -p ./$package/$package
 
 # Copy source to new package dir
 cd ../..
-cp -r include src CMakeLists.txt README.md $build_path/$package/$package
+cp README.md ./debian/README.Debian
+cp -r debian include src lib $build_path/$package/$package
+cp -r CMakeLists.txt cmake_uninstall.cmake.in $build_path/$package/$package
 
 # Build source (For testing purpose)
-# When intsall package (homebrew),
-# homebrew will follow the formula to build package on user's machine
+# When build package (debuild),
+# debbuild uses dh_auto_configure which defined in debian/rules
 cd $build_path/$package/$package
 mkdir ./build
 cd ./build
-cmake .. -DENV="PRODUCTION" -DSHARED="/usr/local/Cellar/kbcb/$version/share/kambria-pre-push" -DVER="$version"
+cmake .. -DENV="production" -DSHARED="/usr/share/kbcb/kambria-pre-push" -DVER="$version"
 make
 
 # Build package
 cd ../..
 tar -cvzf $package.tar.gz $package
+cd ./$package
+dh_make --file ../$package.tar.gz --copyright gpl2 --indep
+debuild -us -uc
 
 LightGreen='\033[1;32m'
 NoColor='\033[0m'

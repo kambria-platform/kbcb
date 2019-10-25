@@ -1,0 +1,9 @@
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/install/local.dir
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/install.dir
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/edit_cache.dir
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/install/strip.dir
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/kbcb.dir
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/kbcb..dir
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/uninstall.dir
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/rebuild_cache.dir
+/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/list_install_components.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libkbcb..a  CMakeFiles/kbcb..dir/lib/git.cpp.o CMakeFiles/kbcb..dir/lib/kambria.cpp.o CMakeFiles/kbcb..dir/lib/util.cpp.o
+/usr/bin/ranlib libkbcb..a
