@@ -10,18 +10,12 @@ using namespace std;
 #define PARSE(string) STRINGIFY(string)
 #define DATA_PATH PARSE(SHARED)
 #define VERSION PARSE(VER)
+#define ENVIRONMENT PARSE(ENV)
 
-#ifdef DEVELOPMENT
-#define ENV "development"
-#else
-#define ENV "production"
-#endif
-
-#define UTIL_BUFFER_LENGTH 255
 
 string getEnv()
 {
-  return ENV;
+  return ENVIRONMENT;
 }
 
 string getVer()

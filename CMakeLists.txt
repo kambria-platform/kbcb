@@ -1,8 +1,9 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.12.0)
 
 set(PROJECT kbcb)
 set(LIBRARY kbcb.${VER})
-set(CMAKE_CXX_FLAGS "${CMAKE_CXXFLAGS} -D${ENV} -DSHARED=${SHARED} -DVER=${VER}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXXFLAGS}")
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXXFLAGS} -D${ENV} -DSHARED=${SHARED} -DVER=${VER}")
 
 project(${PROJECT})
 
@@ -10,6 +11,10 @@ file(GLOB SOURCES "src/*.cpp")
 file(GLOB LIB "lib/*.cpp")
 # file(GLOB HEADER "include/*.h")
 file(GLOB SHARED "src/hooks/*")
+
+add_compile_definitions(ENV=${ENV})
+add_compile_definitions(SHARED=${SHARED})
+add_compile_definitions(VER=${VER})
 
 # build target
 include_directories(include)
