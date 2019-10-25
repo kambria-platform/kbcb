@@ -1,8 +1,11 @@
 kbcb (0.0.3-1) unstable; urgency=medium
 
   * Prune help text
+  * Migrate C to C++
+  * CMake: install/uninstall target, linking libraries
+  * Restructure source tree
 
- -- Tu Phan <tphanson@kambria.io>  Thu, 3 Oct 2019 10:58:03 +0700
+ -- Tu Phan <tphanson@kambria.io>  Fri, 25 Oct 2019 11:05:03 +0700
 
 kbcb (0.0.2-1) unstable; urgency=medium
 

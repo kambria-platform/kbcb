@@ -3,6 +3,8 @@
 #include "util.h"
 #include "kambria.h"
 
+using namespace std;
+
 #define KBCB_BUFFER_LENGTH 255
 
 int main(const int argc, const char *argv[])
@@ -52,7 +54,7 @@ int main(const int argc, const char *argv[])
       // Repo related
       if (strcmp(repo, "empty") == 0 || strlen(repo) == 0)
       {
-        char *error_repo = "\tYou cannot setup Kambria Codebase without your repository url.\n"
+        string error_repo = "\tYou cannot setup Kambria Codebase without your repository url.\n"
                            "\tPlease create your repo on Kambria Codebase first.\n"
                            "\tFor more detail, access app.kambria.io";
         handleError(error_repo);
@@ -65,7 +67,7 @@ int main(const int argc, const char *argv[])
       // Key related
       if (strcmp(key, "empty") == 0 || strlen(key) == 0)
       {
-        char *info = "You have skipped to input your key!\n"
+        string info = "You have skipped to input your key!\n"
                      "We will create a empty .kambriarc then you can edit it later.\n";
         handleInfo(info);
         createEmptyRC();
@@ -146,7 +148,7 @@ int main(const int argc, const char *argv[])
      */
     else
     {
-      char *invalid_params = "Invalid parameters.";
+      string invalid_params = "Invalid parameters.";
       handleError(invalid_params);
     }
   }
