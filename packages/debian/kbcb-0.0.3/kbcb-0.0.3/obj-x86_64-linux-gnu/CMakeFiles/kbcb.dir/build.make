@@ -93,7 +93,7 @@ kbcb_EXTERNAL_OBJECTS =
 
 kbcb: CMakeFiles/kbcb.dir/src/kbcb.cpp.o
 kbcb: CMakeFiles/kbcb.dir/build.make
-kbcb: libkbcb..a
+kbcb: libkbcb.0.0.3.a
 kbcb: CMakeFiles/kbcb.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable kbcb"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kbcb.dir/link.txt --verbose=$(VERBOSE)

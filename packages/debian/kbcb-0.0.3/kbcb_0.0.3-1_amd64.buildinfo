@@ -4,20 +4,20 @@ Binary: kbcb
 Architecture: amd64 source
 Version: 0.0.3-1
 Checksums-Md5:
- eb6fcdf1eccd421804e46d3612659c5c 787 kbcb_0.0.3-1.dsc
- 0ab9796e4f998b136887c28983bcdb44 124808 kbcb-dbgsym_0.0.3-1_amd64.ddeb
- 9833ff133ef6003cac3af656b1863771 16948 kbcb_0.0.3-1_amd64.deb
+ c1ba65ac43efcbdd30fe57aa35cb39c5 784 kbcb_0.0.3-1.dsc
+ 780515272eefcfec2050445175b020b8 125192 kbcb-dbgsym_0.0.3-1_amd64.ddeb
+ b57972732a67a17e9b463bc432e5d269 16852 kbcb_0.0.3-1_amd64.deb
 Checksums-Sha1:
- 5c8d380e86601eab5caf41baed8a4c25daca0fc8 787 kbcb_0.0.3-1.dsc
- c52f29f937fcfa3d62baf625d3c90839ecd6039e 124808 kbcb-dbgsym_0.0.3-1_amd64.ddeb
- 5f6169b723d5380ec240c7349b8144e04e9852ef 16948 kbcb_0.0.3-1_amd64.deb
+ 9ec79351f18d3a29861259b815afad0b2b4f4707 784 kbcb_0.0.3-1.dsc
+ 0accde15cc71104442e080fb9283a1488adfada2 125192 kbcb-dbgsym_0.0.3-1_amd64.ddeb
+ 558eb8d1f5a2db8752f4e288f353ff7a75ef12b1 16852 kbcb_0.0.3-1_amd64.deb
 Checksums-Sha256:
- 37717be7a245873e865a11abd2db10cde12570141acfbb136a53b57d5ff53089 787 kbcb_0.0.3-1.dsc
- 8bc246e6510a6d838bf33bf84e3ddcb4eee57044499c775776e1ffcd05859ad2 124808 kbcb-dbgsym_0.0.3-1_amd64.ddeb
- 3efe3c2d91bb9f43b807941627531a6f56623a810bf2646305f1baf271744530 16948 kbcb_0.0.3-1_amd64.deb
+ 1be50697edc44910b7249a08c9a3c4afd6ff5195ca980759ab74d01fea5a9009 784 kbcb_0.0.3-1.dsc
+ 733f966f014917c573dfe33f5ba05d599ffbfbf7636a1ccfa7c8d681b0485e19 125192 kbcb-dbgsym_0.0.3-1_amd64.ddeb
+ 4a5cfbecfc388556d2e6b45a451372d7ce2866dc47a5ffd4e970f05c9a699697 16852 kbcb_0.0.3-1_amd64.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Fri, 25 Oct 2019 15:59:48 +0700
+Build-Date: Mon, 28 Oct 2019 10:59:54 +0700
 Installed-Build-Depends:
  autoconf (= 2.69-11),
  automake (= 1:1.15.1-3ubuntu2),

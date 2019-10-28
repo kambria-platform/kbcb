@@ -199,8 +199,17 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=ON
 
+//No help, variable specified on the command line.
+ENV:UNINITIALIZED=production
+
+//No help, variable specified on the command line.
+SHARED:UNINITIALIZED=/usr/share/kbcb/kambria-pre-push
+
+//No help, variable specified on the command line.
+VER:UNINITIALIZED=0.0.3
+
 //Dependencies for target
-kbcb._LIB_DEPENDS:STATIC=
+kbcb.0.0.3_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
 kbcb_BINARY_DIR:STATIC=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu

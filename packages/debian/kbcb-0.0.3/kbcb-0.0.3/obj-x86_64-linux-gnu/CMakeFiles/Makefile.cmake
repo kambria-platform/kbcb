@@ -117,6 +117,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/kbcb.dir/DependInfo.cmake"
-  "CMakeFiles/kbcb..dir/DependInfo.cmake"
+  "CMakeFiles/kbcb.0.0.3.dir/DependInfo.cmake"
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   )

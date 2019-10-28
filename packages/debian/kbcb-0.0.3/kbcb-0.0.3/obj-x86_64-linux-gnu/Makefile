@@ -83,17 +83,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -105,6 +94,17 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -173,17 +173,17 @@ kbcb/fast:
 .PHONY : kbcb/fast
 
 #=============================================================================
-# Target rules for targets named kbcb.
+# Target rules for targets named kbcb.0.0.3
 
 # Build rule for target.
-kbcb.: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 kbcb.
-.PHONY : kbcb.
+kbcb.0.0.3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kbcb.0.0.3
+.PHONY : kbcb.0.0.3
 
 # fast build rule for target.
-kbcb./fast:
-	$(MAKE) -f CMakeFiles/kbcb..dir/build.make CMakeFiles/kbcb..dir/build
-.PHONY : kbcb./fast
+kbcb.0.0.3/fast:
+	$(MAKE) -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/build
+.PHONY : kbcb.0.0.3/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -204,7 +204,7 @@ lib/git.o: lib/git.cpp.o
 
 # target to build an object file
 lib/git.cpp.o:
-	$(MAKE) -f CMakeFiles/kbcb..dir/build.make CMakeFiles/kbcb..dir/lib/git.cpp.o
+	$(MAKE) -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/lib/git.cpp.o
 .PHONY : lib/git.cpp.o
 
 lib/git.i: lib/git.cpp.i
@@ -213,7 +213,7 @@ lib/git.i: lib/git.cpp.i
 
 # target to preprocess a source file
 lib/git.cpp.i:
-	$(MAKE) -f CMakeFiles/kbcb..dir/build.make CMakeFiles/kbcb..dir/lib/git.cpp.i
+	$(MAKE) -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/lib/git.cpp.i
 .PHONY : lib/git.cpp.i
 
 lib/git.s: lib/git.cpp.s
@@ -222,7 +222,7 @@ lib/git.s: lib/git.cpp.s
 
 # target to generate assembly for a file
 lib/git.cpp.s:
-	$(MAKE) -f CMakeFiles/kbcb..dir/build.make CMakeFiles/kbcb..dir/lib/git.cpp.s
+	$(MAKE) -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/lib/git.cpp.s
 .PHONY : lib/git.cpp.s
 
 lib/kambria.o: lib/kambria.cpp.o
@@ -231,7 +231,7 @@ lib/kambria.o: lib/kambria.cpp.o
 
 # target to build an object file
 lib/kambria.cpp.o:
-	$(MAKE) -f CMakeFiles/kbcb..dir/build.make CMakeFiles/kbcb..dir/lib/kambria.cpp.o
+	$(MAKE) -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/lib/kambria.cpp.o
 .PHONY : lib/kambria.cpp.o
 
 lib/kambria.i: lib/kambria.cpp.i
@@ -240,7 +240,7 @@ lib/kambria.i: lib/kambria.cpp.i
 
 # target to preprocess a source file
 lib/kambria.cpp.i:
-	$(MAKE) -f CMakeFiles/kbcb..dir/build.make CMakeFiles/kbcb..dir/lib/kambria.cpp.i
+	$(MAKE) -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/lib/kambria.cpp.i
 .PHONY : lib/kambria.cpp.i
 
 lib/kambria.s: lib/kambria.cpp.s
@@ -249,7 +249,7 @@ lib/kambria.s: lib/kambria.cpp.s
 
 # target to generate assembly for a file
 lib/kambria.cpp.s:
-	$(MAKE) -f CMakeFiles/kbcb..dir/build.make CMakeFiles/kbcb..dir/lib/kambria.cpp.s
+	$(MAKE) -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/lib/kambria.cpp.s
 .PHONY : lib/kambria.cpp.s
 
 lib/util.o: lib/util.cpp.o
@@ -258,7 +258,7 @@ lib/util.o: lib/util.cpp.o
 
 # target to build an object file
 lib/util.cpp.o:
-	$(MAKE) -f CMakeFiles/kbcb..dir/build.make CMakeFiles/kbcb..dir/lib/util.cpp.o
+	$(MAKE) -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/lib/util.cpp.o
 .PHONY : lib/util.cpp.o
 
 lib/util.i: lib/util.cpp.i
@@ -267,7 +267,7 @@ lib/util.i: lib/util.cpp.i
 
 # target to preprocess a source file
 lib/util.cpp.i:
-	$(MAKE) -f CMakeFiles/kbcb..dir/build.make CMakeFiles/kbcb..dir/lib/util.cpp.i
+	$(MAKE) -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/lib/util.cpp.i
 .PHONY : lib/util.cpp.i
 
 lib/util.s: lib/util.cpp.s
@@ -276,7 +276,7 @@ lib/util.s: lib/util.cpp.s
 
 # target to generate assembly for a file
 lib/util.cpp.s:
-	$(MAKE) -f CMakeFiles/kbcb..dir/build.make CMakeFiles/kbcb..dir/lib/util.cpp.s
+	$(MAKE) -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/lib/util.cpp.s
 .PHONY : lib/util.cpp.s
 
 src/kbcb.o: src/kbcb.cpp.o
@@ -314,10 +314,10 @@ help:
 	@echo "... depend"
 	@echo "... install/local"
 	@echo "... install"
-	@echo "... edit_cache"
 	@echo "... install/strip"
 	@echo "... kbcb"
-	@echo "... kbcb."
+	@echo "... kbcb.0.0.3"
+	@echo "... edit_cache"
 	@echo "... uninstall"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"

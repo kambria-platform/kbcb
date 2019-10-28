@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libkbcb..a"
+  "libkbcb.0.0.3.a"
 )
