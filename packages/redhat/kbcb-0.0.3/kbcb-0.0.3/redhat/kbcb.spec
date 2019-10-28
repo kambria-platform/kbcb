@@ -26,7 +26,7 @@ repositories to Kambria Codebase platform.
 %build
 mkdir ./build
 cd ./build
-cmake .. -DENV='production' -DSHARED='/usr/local/share/kbcb/kambria-pre-push' -DVER="%{version}"
+cmake .. -DENV=production -DSHARED=/usr/local/share/kbcb/kambria-pre-push -DVER=%{version}
 make
 
 
@@ -35,7 +35,7 @@ cd ./build
 %make_install
 mkdir -p $RPM_BUILD_ROOT/usr/local/share/doc/kbcb
 cd ../redhat
-cp -r README LICENSE $RPM_BUILD_ROOT/usr/local/share/doc/kbcb
+cp -r docs README LICENSE $RPM_BUILD_ROOT/usr/local/share/doc/kbcb
 
 
 %files
@@ -43,6 +43,7 @@ cp -r README LICENSE $RPM_BUILD_ROOT/usr/local/share/doc/kbcb
 /usr/local/share/kbcb/kambria-pre-push
 %license /usr/local/share/doc/kbcb/LICENSE
 %doc /usr/local/share/doc/kbcb/README
+%doc /usr/local/share/doc/kbcb/docs
 
 
 %changelog

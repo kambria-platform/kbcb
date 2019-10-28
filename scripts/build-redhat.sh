@@ -18,6 +18,7 @@ mkdir -p ./$package/$package
 # Copy source to new package dir
 cd ../..
 cp README.md ./redhat/README
+cp -r docs ./redhat
 cp -r redhat include src lib $build_path/$package/$package
 cp -r CMakeLists.txt cmake_uninstall.cmake.in $build_path/$package/$package
 
