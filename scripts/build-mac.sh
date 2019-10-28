@@ -18,8 +18,8 @@ mkdir -p ./$package/$package
 cd ../..
 cp -r include src CMakeLists.txt README.md $build_path/$package/$package
 
-# Build source (For testing purpose)
-# When intsall package (homebrew),
+# Building source here onl for testing purposes
+# When intsalling package (by homebrew),
 # homebrew will follow the formula to build package on user's machine
 cd $build_path/$package/$package
 mkdir ./build

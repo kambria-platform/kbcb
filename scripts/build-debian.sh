@@ -24,8 +24,8 @@ cp -r CMakeLists.txt cmake_uninstall.cmake.in $build_path/$package/$package
 cd $build_path/$package/$package
 echo $build_flags >> ./debian/rules
 
-# Build source (For testing purpose)
-# When build package (debuild),
+# Building source here only for testing purposes
+# When building package (by debuild),
 # debuild uses dh_auto_configure which defined in debian/rules
 mkdir ./test
 cd ./test
