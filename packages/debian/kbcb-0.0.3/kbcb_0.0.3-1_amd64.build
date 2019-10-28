@@ -72,11 +72,11 @@ make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/
 /usr/bin/c++  -DENV=production -DSHARED=/usr/share/kbcb/kambria-pre-push -DVER=0.0.3 -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/include  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -o CMakeFiles/kbcb.0.0.3.dir/lib/git.cpp.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/lib/git.cpp
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
-[ 33%] Building CXX object CMakeFiles/kbcb.0.0.3.dir/lib/util.cpp.o
+[ 50%] Building CXX object CMakeFiles/kbcb.0.0.3.dir/lib/util.cpp.o
 /usr/bin/c++  -DENV=production -DSHARED=/usr/share/kbcb/kambria-pre-push -DVER=0.0.3 -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/include  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -o CMakeFiles/kbcb.0.0.3.dir/lib/util.cpp.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/lib/util.cpp
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
-[ 50%] Building CXX object CMakeFiles/kbcb.0.0.3.dir/lib/kambria.cpp.o
+[ 33%] Building CXX object CMakeFiles/kbcb.0.0.3.dir/lib/kambria.cpp.o
 /usr/bin/c++  -DENV=production -DSHARED=/usr/share/kbcb/kambria-pre-push -DVER=0.0.3 -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/include  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -o CMakeFiles/kbcb.0.0.3.dir/lib/kambria.cpp.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/lib/kambria.cpp
 make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
 make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'

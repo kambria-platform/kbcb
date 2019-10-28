@@ -10,11 +10,11 @@ Build-Depends: cmake (>= 3.10), debhelper (>= 11)
 Package-List:
  kbcb deb devel optional arch=any
 Checksums-Sha1:
- 470ee011c89dbb7b5850759aeba6dac69d32de67 7493 kbcb_0.0.3.orig.tar.gz
- f4b0e2a471f677aaf105235a4a9d96fed4183f54 2704 kbcb_0.0.3-1.debian.tar.xz
+ 55d146d664a5935913aee70625ae433ae744f852 8417 kbcb_0.0.3.orig.tar.gz
+ 3e71596931e3552e06fd295dd1ab339015b628da 2168 kbcb_0.0.3-1.debian.tar.xz
 Checksums-Sha256:
- 4ae6f3c3d287e463e8607373fc3bf04dfeb18c794bb8b50dc517bb0152c553c2 7493 kbcb_0.0.3.orig.tar.gz
- 535ff7e0ebc85d43c1de4fd75ec25b004c067cef45b0ffc208dcb8bc2b6358fb 2704 kbcb_0.0.3-1.debian.tar.xz
+ 972f62354b3f38c0bcc6873339b296e9f0ddc39144c410721730c0c00e67a6f6 8417 kbcb_0.0.3.orig.tar.gz
+ bcd78d20a88dedcbd70f8a9494b4aed5e3d4227b738f1711b4498831f54f4ab2 2168 kbcb_0.0.3-1.debian.tar.xz
 Files:
- 0cb3a10183125e88055038f6772b9584 7493 kbcb_0.0.3.orig.tar.gz
- 0a4827b792767ad8f29d1a45626e9c8c 2704 kbcb_0.0.3-1.debian.tar.xz
+ 0da62a19ce0a9e05d6299617af174df8 8417 kbcb_0.0.3.orig.tar.gz
+ 64486bfac8983ea8b2bf71917ab6411b 2168 kbcb_0.0.3-1.debian.tar.xz

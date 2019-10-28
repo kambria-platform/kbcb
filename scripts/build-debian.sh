@@ -18,7 +18,7 @@ mkdir -p ./$package/$package
 # Copy source to new package dir
 cd ../..
 cp README.md ./debian/README.Debian
-cp -r debian include src lib $build_path/$package/$package
+cp -r debian docs include src lib $build_path/$package/$package
 cp -r CMakeLists.txt cmake_uninstall.cmake.in $build_path/$package/$package
 # Add build flags to rules
 cd $build_path/$package/$package
