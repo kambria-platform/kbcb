@@ -7,7 +7,7 @@ set -e
 read -p "Input version [kbcb-<version>]: " version
 package=kbcb-$version
 build_path=./packages/redhat
-build_flags="-DENV='production' -DSHARED='/usr/share/kbcb/kambria-pre-push' -DVER=${version}"
+build_flags="-DENV='production' -DSHARED='/usr/local/share/kbcb/kambria-pre-push' -DVER=${version}"
 
 # Create package dir
 mkdir -p $build_path
@@ -18,7 +18,8 @@ mkdir -p ./$package/$package
 # Copy source to new package dir
 cd ../..
 cp README.md ./redhat/README
-cp -r redhat include src CMakeLists.txt $build_path/$package/$package
+cp -r redhat include src lib $build_path/$package/$package
+cp -r CMakeLists.txt cmake_uninstall.cmake.in $build_path/$package/$package
 
 # Building source here only for testing purposes
 # When building package (by rpmbuild),
@@ -31,7 +32,7 @@ make
 LightGreen='\033[1;32m'
 NoColor='\033[0m'
 echo ""
-echo "${LightGreen}$package was tested without errors!${NoColor}"
+echo -e "${LightGreen}${package} was tested without errors!${NoColor}"
 echo ""
 # Remove test
 cd ..
@@ -43,14 +44,15 @@ tar -cvzf $package.tar.gz $package
 rm -rf ~/rpmbuild
 rpmdev-setuptree
 cp $package.tar.gz ~/rpmbuild/SOURCES
-cp ./$package/redhat/* ~/rpmbuild/SPECS
+cp ./$package/redhat/kbcb.spec ~/rpmbuild/SPECS
 
 # Build package
-cd ~/rpmbuild
-rpmbuild -ba SPECS/kbcb.spec
+rpmbuild -ba ~/rpmbuild/SPECS/kbcb.spec
+cp ~/rpmbuild/RPMS/x86_64/* ./
 
+# Notification
 LightGreen='\033[1;32m'
 NoColor='\033[0m'
 echo ""
-echo "${LightGreen}$package was built completely!${NoColor}"
+echo -e "${LightGreen}${package} was built completely!${NoColor}"
 echo ""

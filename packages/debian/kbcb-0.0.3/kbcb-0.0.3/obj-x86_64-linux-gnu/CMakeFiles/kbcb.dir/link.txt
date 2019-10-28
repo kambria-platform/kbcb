@@ -1,1 +1,0 @@
-/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -Wl,-Bsymbolic-functions -Wl,-z,relro CMakeFiles/kbcb.dir/src/kbcb.cpp.o  -o kbcb libkbcb.0.0.3.a 
