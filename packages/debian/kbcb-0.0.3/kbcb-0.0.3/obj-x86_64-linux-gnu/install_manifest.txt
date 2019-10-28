@@ -1,0 +1,2 @@
+/usr/bin/kbcb
+/usr/share/kbcb/kambria-pre-push

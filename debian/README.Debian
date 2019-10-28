@@ -95,7 +95,7 @@ Then, you can test by,
 
 This file let you build the package in `production` environment. the built bundles would appear in `packages` folder.
 
-You may have to clearify some info like arch, version for build process.
+You may have to clarify some info like arch, version for build process.
 
 To build (stay at the source root),
 

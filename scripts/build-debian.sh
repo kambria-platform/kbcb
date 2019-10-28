@@ -1,13 +1,13 @@
 #!/bin/sh
 
 # Config to exit shell on any error
-# set -e
+set -e
 
 # Get package version
 read -p "Input version [kbcb-<version>]: " version
 package=kbcb-$version
 build_path=./packages/debian
-build_flags="-DENV='production' -DSHARED='/usr/share/kbcb/kambria-pre-push' -DVER=${version}"
+build_flags="-DENV=production -DSHARED=/usr/share/kbcb/kambria-pre-push -DVER=${version}"
 
 # Create package dir
 mkdir -p $build_path
@@ -22,7 +22,7 @@ cp -r debian include src lib $build_path/$package/$package
 cp -r CMakeLists.txt cmake_uninstall.cmake.in $build_path/$package/$package
 # Add build flags to rules
 cd $build_path/$package/$package
-echo $build_flags >> ./debian/rules
+sed -i "s@#OPTIONS@${build_flags}@g" ./debian/rules
 
 # Building source here only for testing purposes
 # When building package (by debuild),
@@ -45,7 +45,7 @@ rm -rf ./test
 cd ..
 tar -cvzf $package.tar.gz $package
 cd ./$package
-dh_make --file ../$package.tar.gz --copyright gpl2 --indep
+dh_make --file ../$package.tar.gz --copyright gpl2 --indep --overlay ./debian
 debuild -us -uc
 
 # Notification

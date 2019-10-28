@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Fri, 25 Oct 2019 11:05:03 +0700
+Source: kbcb
+Binary: kbcb
+Architecture: source amd64
+Version: 0.0.3-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Tu Phan <tphanson@kambria.io>
+Changed-By: Tu Phan <tphanson@kambria.io>
+Description:
+ kbcb       - Kambria Codebase CLI <kbcb>
+Changes:
+ kbcb (0.0.3-1) unstable; urgency=medium
+ .
+   * Prune help text
+   * Migrate C to C++
+   * CMake: install/uninstall target, linking libraries
+   * Restructure source tree
+   * Use make install instead of install spec file
+Checksums-Sha1:
+ 63b218b03571211f4c5359f70fd2fce5e6f6a6d9 784 kbcb_0.0.3-1.dsc
+ 470ee011c89dbb7b5850759aeba6dac69d32de67 7493 kbcb_0.0.3.orig.tar.gz
+ f4b0e2a471f677aaf105235a4a9d96fed4183f54 2704 kbcb_0.0.3-1.debian.tar.xz
+ 0accde15cc71104442e080fb9283a1488adfada2 125192 kbcb-dbgsym_0.0.3-1_amd64.ddeb
+ 4a7364e17fb7052f324e43b88aaf35ff52be75d8 7368 kbcb_0.0.3-1_amd64.buildinfo
+ e2a879540ae35ef5517a5b5e3a543fb7649334a9 16864 kbcb_0.0.3-1_amd64.deb
+Checksums-Sha256:
+ 5574eb09a584c3aa8cd859fd63dc8ffaae36e7460a0b2df9875a530938e668ec 784 kbcb_0.0.3-1.dsc
+ 4ae6f3c3d287e463e8607373fc3bf04dfeb18c794bb8b50dc517bb0152c553c2 7493 kbcb_0.0.3.orig.tar.gz
+ 535ff7e0ebc85d43c1de4fd75ec25b004c067cef45b0ffc208dcb8bc2b6358fb 2704 kbcb_0.0.3-1.debian.tar.xz
+ 733f966f014917c573dfe33f5ba05d599ffbfbf7636a1ccfa7c8d681b0485e19 125192 kbcb-dbgsym_0.0.3-1_amd64.ddeb
+ 31feb511c66ef28ebb1f2b4696e8ba3c14b19e7d0db56c545ebb195e81328873 7368 kbcb_0.0.3-1_amd64.buildinfo
+ 27c139ca93e1ad96c7bc43f87b1da5dbfa5226f5a753455e6181dc7ea63e3cca 16864 kbcb_0.0.3-1_amd64.deb
+Files:
+ d3dd88df2999582d281ba1184cadc629 784 devel optional kbcb_0.0.3-1.dsc
+ 0cb3a10183125e88055038f6772b9584 7493 devel optional kbcb_0.0.3.orig.tar.gz
+ 0a4827b792767ad8f29d1a45626e9c8c 2704 devel optional kbcb_0.0.3-1.debian.tar.xz
+ 780515272eefcfec2050445175b020b8 125192 debug optional kbcb-dbgsym_0.0.3-1_amd64.ddeb
+ cc18aaff7dbe9b16d9d8f7037077c7f1 7368 devel optional kbcb_0.0.3-1_amd64.buildinfo
+ 60f41f08ec85d4c74d139b06f0b272d3 16864 devel optional kbcb_0.0.3-1_amd64.deb

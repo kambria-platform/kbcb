@@ -1,0 +1,185 @@
+ dpkg-buildpackage -rfakeroot -us -uc -ui
+dpkg-buildpackage: info: source package kbcb
+dpkg-buildpackage: info: source version 0.0.3-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Tu Phan <tphanson@kambria.io>
+ dpkg-source --before-build kbcb-0.0.3
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b kbcb-0.0.3
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building kbcb using existing ./kbcb_0.0.3.orig.tar.gz
+dpkg-source: info: building kbcb in kbcb_0.0.3-1.debian.tar.xz
+dpkg-source: info: building kbcb in kbcb_0.0.3-1.dsc
+ debian/rules build
+dh build
+   dh_update_autotools_config
+   dh_autoreconf
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3'
+dh_auto_configure -- -DCMAKE_LIBRARY_PATH=x86_64-linux-gnu \
+-DENV=production -DSHARED=/usr/share/kbcb/kambria-pre-push -DVER=0.0.3
+	cd obj-x86_64-linux-gnu && cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_INSTALL_LOCALSTATEDIR=/var -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON -DCMAKE_INSTALL_RUNSTATEDIR=/run -DCMAKE_LIBRARY_PATH=x86_64-linux-gnu -DENV=production -DSHARED=/usr/share/kbcb/kambria-pre-push -DVER=0.0.3
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_LOCALSTATEDIR
+    CMAKE_INSTALL_RUNSTATEDIR
+    CMAKE_INSTALL_SYSCONFDIR
+    CMAKE_LIBRARY_PATH
+
+
+-- Build files have been written to: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu
+make[1]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3'
+   dh_auto_build
+	cd obj-x86_64-linux-gnu && make -j4 -O
+make[1]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+/usr/bin/cmake -H/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3 -B/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+make[1]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make[1]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/progress.marks
+make[1]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make -f CMakeFiles/Makefile2 all
+make -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/depend
+make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+cd /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3 /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3 /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/kbcb.0.0.3.dir/DependInfo.cmake --color=
+Scanning dependencies of target kbcb.0.0.3
+make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/build
+make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+[ 16%] Building CXX object CMakeFiles/kbcb.0.0.3.dir/lib/git.cpp.o
+/usr/bin/c++  -DENV=production -DSHARED=/usr/share/kbcb/kambria-pre-push -DVER=0.0.3 -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/include  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -o CMakeFiles/kbcb.0.0.3.dir/lib/git.cpp.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/lib/git.cpp
+make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+[ 33%] Building CXX object CMakeFiles/kbcb.0.0.3.dir/lib/util.cpp.o
+/usr/bin/c++  -DENV=production -DSHARED=/usr/share/kbcb/kambria-pre-push -DVER=0.0.3 -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/include  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -o CMakeFiles/kbcb.0.0.3.dir/lib/util.cpp.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/lib/util.cpp
+make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+[ 50%] Building CXX object CMakeFiles/kbcb.0.0.3.dir/lib/kambria.cpp.o
+/usr/bin/c++  -DENV=production -DSHARED=/usr/share/kbcb/kambria-pre-push -DVER=0.0.3 -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/include  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -o CMakeFiles/kbcb.0.0.3.dir/lib/kambria.cpp.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/lib/kambria.cpp
+make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+[ 66%] Linking CXX static library libkbcb.0.0.3.a
+/usr/bin/cmake -P CMakeFiles/kbcb.0.0.3.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/kbcb.0.0.3.dir/link.txt --verbose=1
+/usr/bin/ar qc libkbcb.0.0.3.a  CMakeFiles/kbcb.0.0.3.dir/lib/git.cpp.o CMakeFiles/kbcb.0.0.3.dir/lib/kambria.cpp.o CMakeFiles/kbcb.0.0.3.dir/lib/util.cpp.o
+/usr/bin/ranlib libkbcb.0.0.3.a
+make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+[ 66%] Built target kbcb.0.0.3
+make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make -f CMakeFiles/kbcb.dir/build.make CMakeFiles/kbcb.dir/depend
+make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+cd /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3 /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3 /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/kbcb.dir/DependInfo.cmake --color=
+Scanning dependencies of target kbcb
+make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make -f CMakeFiles/kbcb.dir/build.make CMakeFiles/kbcb.dir/build
+make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+[ 83%] Building CXX object CMakeFiles/kbcb.dir/src/kbcb.cpp.o
+/usr/bin/c++  -DENV=production -DSHARED=/usr/share/kbcb/kambria-pre-push -DVER=0.0.3 -I/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/include  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2   -o CMakeFiles/kbcb.dir/src/kbcb.cpp.o -c /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/src/kbcb.cpp
+make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+[100%] Linking CXX executable kbcb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/kbcb.dir/link.txt --verbose=1
+/usr/bin/c++  -g -O2 -fdebug-prefix-map=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2  -Wl,-Bsymbolic-functions -Wl,-z,relro CMakeFiles/kbcb.dir/src/kbcb.cpp.o  -o kbcb libkbcb.0.0.3.a 
+make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+[100%] Built target kbcb
+make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make[1]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles 0
+make[1]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+	cd obj-x86_64-linux-gnu && make -j4 -O install DESTDIR=/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/debian/kbcb AM_UPDATE_INFO_DIR=no
+make[1]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+/usr/bin/cmake -H/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3 -B/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+make[1]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make[1]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/progress.marks
+make[1]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make -f CMakeFiles/Makefile2 all
+make -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/depend
+make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+cd /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3 /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3 /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/kbcb.0.0.3.dir/DependInfo.cmake --color=
+make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make -f CMakeFiles/kbcb.0.0.3.dir/build.make CMakeFiles/kbcb.0.0.3.dir/build
+make[3]: Nothing to be done for 'CMakeFiles/kbcb.0.0.3.dir/build'.
+make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+[ 66%] Built target kbcb.0.0.3
+make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make -f CMakeFiles/kbcb.dir/build.make CMakeFiles/kbcb.dir/depend
+make[3]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+cd /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3 /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3 /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles/kbcb.dir/DependInfo.cmake --color=
+make[3]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make -f CMakeFiles/kbcb.dir/build.make CMakeFiles/kbcb.dir/build
+make[3]: Nothing to be done for 'CMakeFiles/kbcb.dir/build'.
+make[2]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+[100%] Built target kbcb
+make[2]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make[1]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu/CMakeFiles 0
+make[1]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+make -f CMakeFiles/Makefile2 preinstall
+make[2]: Nothing to be done for 'preinstall'.
+make[1]: Entering directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/debian/kbcb/usr/bin/kbcb
+-- Installing: /home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/debian/kbcb/usr/share/kbcb/kambria-pre-push
+make[1]: Leaving directory '/home/tups/Desktop/kbcb/packages/debian/kbcb-0.0.3/kbcb-0.0.3/obj-x86_64-linux-gnu'
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'kbcb' in '../kbcb_0.0.3-1_amd64.deb'.
+dpkg-deb: building package 'kbcb-dbgsym' in 'debian/.debhelper/scratch-space/build-kbcb/kbcb-dbgsym_0.0.3-1_amd64.deb'.
+	Renaming kbcb-dbgsym_0.0.3-1_amd64.deb to kbcb-dbgsym_0.0.3-1_amd64.ddeb
+ dpkg-genbuildinfo
+ dpkg-genchanges  >../kbcb_0.0.3-1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build kbcb-0.0.3
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian kbcb_0.0.3-1_amd64.changes ...
+E: kbcb changes: bad-distribution-in-changes-file unstable
+W: kbcb: binary-without-manpage usr/bin/kbcb
+W: kbcb: script-not-executable usr/share/kbcb/kambria-pre-push
+Finished running lintian.
