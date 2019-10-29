@@ -3,3 +3,4 @@ build
 pre-push
 .kambriarc
 .vscode
+.DS_Store
