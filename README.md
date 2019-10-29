@@ -10,6 +10,7 @@ In order to install kbcb to your machine, please select your suitable operation 
 * [MacOS](./docs/macos.md)
 * [Redhat based](./docs/redhat.md)
 * [Microsoft Window](./docs/window.md)
+* [Bianry Package](./docs/bianry.md)
 
 # How to use ?
 
