@@ -3,6 +3,8 @@
 # Config tp exit shell on error
 set -e
 
+echo "Hello"
+
 # Root path
 rootpath=$PWD
 

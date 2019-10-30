@@ -9,7 +9,7 @@ In order to install kbcb to your machine, please select your suitable operation 
 * [Debian based](./docs/debian.md)
 * [MacOS](./docs/macos.md)
 * [Redhat based](./docs/redhat.md)
-* [Microsoft Window](./docs/window.md)
+* [Microsoft Windows](./docs/windows.md)
 * [Binary Package](./docs/binary.md)
 
 # How to use ?
