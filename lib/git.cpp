@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <unistd.h>
 #include "git.h"
 #include "util.h"
 
@@ -56,14 +55,7 @@ string getHookPath(const string filename)
 bool checkHookExistence(string filename)
 {
   string path = getHookPath(filename);
-  if (access(path.c_str(), F_OK) != -1)
-  {
-    return true;
-  }
-  else
-  {
-    return false;
-  }
+  return checkFileExistence(path);
 }
 
 void addRemote(string remote, string url)

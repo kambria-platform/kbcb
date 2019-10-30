@@ -12,7 +12,6 @@ using namespace std;
 #define VERSION PARSE(VER)
 #define ENVIRONMENT PARSE(ENV)
 
-
 string getEnv()
 {
   return ENVIRONMENT;
@@ -127,4 +126,10 @@ bool checkEmptyExectuableFile(string fpath)
 
   file.close();
   return isEmpty;
+}
+
+bool checkFileExistence(string fpath)
+{
+  ifstream f(fpath.c_str());
+  return f.good();
 }

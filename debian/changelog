@@ -1,3 +1,9 @@
+kbcb (0.0.3-2) unstable; urgency=medium
+
+  * Remove depended-UNIX libraries
+
+ -- Tu Phan <tphanson@kambria.io>  Web, 30 Oct 2019 16:13:05 +0700
+
 kbcb (0.0.3-1) unstable; urgency=medium
 
   * Prune help text

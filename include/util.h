@@ -57,3 +57,9 @@ void setExecutable(std::string fpath);
  * @param fpath - file path
  */
 bool checkEmptyExectuableFile(std::string fpath);
+
+/**
+ * Check if file existed
+ * @param fpath - file path
+ */
+bool checkFileExistence(std::string fpath);
